@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light-50: "#f6f6f6";
+  --color-light-100: "#f1f1f1";
+  --color-light-200: "#e6e6e6";
+  --color-light-300: "#d6d6d6";
+  --color-light-400: "#c7c7c7";
+  --color-light-500: "#b0b0b0";
+  --color-light-500: "#999";
+  --color-light-600: "#878787";
+  --color-light-700: "#757575";
+  --color-light-800: "#636363";
+  --color-light-900: "#545454";
+
+  --color-dark-100: "#4f4f4f";
+  --color-dark-200: "#474747";
+  --color-dark-300: "#363636";
+  --color-dark-400: "#2b2b2b";
+  --color-dark-500: "#242424";
+  --color-dark-600: "#1c1c1c";
+  --color-dark-700: "#1a1a1a";
+  --color-dark-800: "#141414";
+  --color-dark-900: "#0f0f0f";
+}
+
+@layer base {
+  :root {
+    scrollbar-gutter: stable;
+  }
+
+  html,
+  html.light-mode {
+    --color-bg: var(--color-light-100);
+    --color-bg-component: var(--color-light-50);
+    --color-text: var(--color-dark-700);
+  }
+
+  html.dark-mode {
+    --color-bg: var(--color-dark-900);
+    --color-bg-component: var(--color-dark-700);
+    --color-text: var(--color-light-100);
+  }
+}

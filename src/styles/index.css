@@ -26,6 +26,12 @@
   --color-backdrop: var(--color-light-100);
   --color-component-bg: var(--color-light-50);
   --color-text: var(--color-dark-700);
+
+  --color-accent-100: #75ebd1;
+  --color-accent-300: #40c9ab;
+  --color-accent-500: #149c7e;
+  --color-accent-700: #076651;
+  --color-accent-900: #02362a;
 }
 
 @layer base {
@@ -33,9 +39,21 @@
     scrollbar-gutter: stable;
   }
 
+  *,
+  *::before,
+  *::after {
+    transition:
+      background-color 0.3s,
+      border 0.3s;
+  }
+
   html.dark-mode {
     --color-backdrop: var(--color-dark-900);
     --color-component-bg: var(--color-dark-700);
     --color-text: var(--color-light-100);
+  }
+
+  body {
+    font-family: "Nunito Sans", "Trebuchet MS", Tahoma, sans-serif;
   }
 }

@@ -3,16 +3,14 @@ import { LuHandCoins, LuPercent, LuWallet } from "react-icons/lu";
 import DashboardFilter from "../components/DashboardFilter";
 import ExpensesBreakdownPieChart from "../components/ExpensesBreakdownPieChart";
 import FinancesChart from "../components/FinancesChart";
-import SummaryCard from "../components/SummaryCard";
 import RecentTransactions from "../components/RecentTransactions";
-import { useDarkMode } from "../contexts/DarkModeContext";
+import SummaryCard from "../components/SummaryCard";
 import { selectBalance, selectDashboardData } from "../store/accountSlice";
 import { useAppSelector } from "../store/storeHooks";
 import { currencyFormatter } from "../utils/currencyFormatter";
 
 export default function Dashboard() {
-  const { isDarkMode } = useDarkMode();
-  const { transactions, summaries, expensesByCategory, chartData, recentTransactions } =
+  const { summaries, expensesByCategory, chartData, recentTransactions } =
     useAppSelector(selectDashboardData);
   const balance = useAppSelector(selectBalance);
 

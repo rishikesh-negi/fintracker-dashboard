@@ -1,5 +1,4 @@
-import { HiOutlineBanknotes } from "react-icons/hi2";
-import { LuHandCoins, LuPercent, LuWallet } from "react-icons/lu";
+import { MdAccountBalanceWallet, MdCurrencyRupee, MdPayments, MdSavings } from "react-icons/md";
 import DashboardFilter from "../components/DashboardFilter";
 import ExpensesBreakdownPieChart from "../components/ExpensesBreakdownPieChart";
 import FinancesChart from "../components/FinancesChart";
@@ -8,7 +7,6 @@ import SummaryCard from "../components/SummaryCard";
 import { selectBalance, selectDashboardData } from "../store/accountSlice";
 import { useAppSelector } from "../store/storeHooks";
 import { currencyFormatter } from "../utils/currencyFormatter";
-import { MdAccountBalanceWallet, MdCurrencyRupee, MdPayments, MdSavings } from "react-icons/md";
 
 export default function Dashboard() {
   const { summaries, expensesByCategory, chartData, recentTransactions } =

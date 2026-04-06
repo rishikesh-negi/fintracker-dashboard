@@ -23,15 +23,16 @@
   --color-dark-800: #141414;
   --color-dark-900: #0f0f0f;
 
-  --color-backdrop: var(--color-light-100);
+  --color-backdrop: var(--color-light-200);
   --color-component-bg: var(--color-light-50);
   --color-text: var(--color-dark-700);
+  --color-faint-text: var(--color-light-700);
 
-  --color-accent-100: #75ebd1;
-  --color-accent-300: #40c9ab;
-  --color-accent-500: #149c7e;
-  --color-accent-700: #076651;
-  --color-accent-900: #02362a;
+  --color-accent-100: #8ec8fa;
+  --color-accent-300: #4c9ce0;
+  --color-accent-500: #237ecc;
+  --color-accent-700: #065496;
+  --color-accent-900: #00325c;
 }
 
 @layer base {
@@ -42,7 +43,11 @@
   *,
   *::before,
   *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     transition:
+      stroke 0.3s,
       background-color 0.3s,
       border 0.3s;
   }
@@ -51,6 +56,7 @@
     --color-backdrop: var(--color-dark-900);
     --color-component-bg: var(--color-dark-700);
     --color-text: var(--color-light-100);
+    --color-faint-text: var(--color-light-700);
   }
 
   body {

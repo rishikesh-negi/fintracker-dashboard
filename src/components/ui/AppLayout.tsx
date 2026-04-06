@@ -12,7 +12,7 @@ export default function AppLayout() {
       </MobileSideNavToggleProvider>
 
       <main className="col-span-1 sm:col-start-2 sm:col-end-3 row-start-2 row-end-3 bg-backdrop grid overflow-y-auto">
-        <div className="max-w-7xl w-full px-6 md:px-8 lg:px-12 xl:px-20 py-4 md:py-6 lg-py-8 xl:py-12 mx-auto flex flex-col">
+        <div className="max-w-7xl w-full px-6 md:px-8 lg:px-12 xl:px-20 py-4 md:py-6 lg-py-8 xl:py-10 mx-auto flex flex-col">
           <Outlet />
         </div>
       </main>

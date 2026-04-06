@@ -36,10 +36,6 @@
 }
 
 @layer base {
-  :root {
-    scrollbar-gutter: stable;
-  }
-
   *,
   *::before,
   *::after {
@@ -61,5 +57,15 @@
 
   body {
     font-family: "Nunito Sans", "Trebuchet MS", Tahoma, sans-serif;
+  }
+}
+
+@layer components {
+  .styled-scrollbar {
+    @apply [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar]:h-full [&::-webkit-scrollbar-thumb]:bg-accent-300 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:transition-colors [&::-webkit-scrollbar-thumb]:duration-100 [&::-webkit-scrollbar-thumb:hover]:bg-accent-500 [&::-webkit-scrollbar-thumb:hover]:cursor-pointer [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-button]:hidden;
+  }
+
+  .component-container {
+    @apply p-2 sm:p-3 xl:p-4 rounded-md bg-component-bg shadow-md;
   }
 }

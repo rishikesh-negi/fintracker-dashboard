@@ -54,7 +54,7 @@ function Body({
   render: (arg: Transaction) => JSX.Element;
 }) {
   return (
-    <section className="mx-1 overflow-y-scroll max-h-120 lg:max-h-150 styled-scrollbar">
+    <section className="mx-1 overflow-y-auto max-h-120 lg:max-h-150 styled-scrollbar">
       {data.length ? (
         (data.map(render) as ReactNode)
       ) : (

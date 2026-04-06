@@ -90,7 +90,12 @@ export default function Transactions() {
 
         <Table.Body
           data={transactions}
-          render={(arg: Transaction) => <TransactionRow transaction={arg} />}
+          render={(arg: Transaction) => (
+            <TransactionRow
+              transaction={arg}
+              key={`${arg.accountHolderName}${arg.accountNumber}${arg.transactionId}`}
+            />
+          )}
         />
 
         <Table.Footer>

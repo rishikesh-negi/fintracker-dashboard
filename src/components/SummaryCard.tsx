@@ -1,5 +1,4 @@
 import type { ComponentPropsWithoutRef, ReactElement } from "react";
-import { useAppSelector } from "../store/storeHooks";
 
 type SummaryCardProps = ComponentPropsWithoutRef<"div"> & {
   title: string;
@@ -14,8 +13,6 @@ export default function SummaryCard({ title, icon, figure, change, ...props }: S
 
   const iconContainerClasses = `w-12 md:w-12 aspect-square md:h-12 rounded-full flex items-center justify-center bg-backdrop shadow-[inset_0.1rem_0.15rem_0.2rem_0.1rem_rgba(0,0,0,0.1)]`;
 
-  const dashboardFilter = useAppSelector((state) => state.account.dashboardFilter);
-
   return (
     <div {...props} className={summaryCardClasses}>
       <div className="w-full h-full flex items-center gap-2 sm:gap-3">
@@ -25,11 +22,6 @@ export default function SummaryCard({ title, icon, figure, change, ...props }: S
             {title}
           </p>
           <span className="text-sm sm:text-lg font-bold">{figure}</span>
-          {/* {title === "balance" && dashboardFilter !== "all-time" && (
-            <span className="font-semibold uppercase lg:font-bold text-[0.6rem] sm:text-xs tracking-widest text-faint-text">
-              Net
-            </span>
-          )} */}
           {typeof change === "number" ? (
             <span
               className={`font-semibold uppercase lg:font-bold text-[0.6rem] sm:text-xs tracking-wider ${change > 0 && "text-green-500"} ${change < 0 && "text-red-500"} ${change === 0 && "text-faint-text"}`}>

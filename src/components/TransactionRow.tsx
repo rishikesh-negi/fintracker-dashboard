@@ -19,7 +19,7 @@ export default function TransactionRow({ transaction, ...props }: RecentTransact
       <span className="text-xs">{description}</span>
       <Tag
         text={transactionType}
-        bgColor={`${transactionType === "expense" ? "bg-orange-700" : "bg-green-700"}`}
+        bgColor={`${transactionType === "expense" ? "bg-[#d90028]" : "bg-[#00a34f]"}`}
       />
       <span className="text-xs font-bold">{currencyFormatter.format(amount)}</span>
     </li>

@@ -25,17 +25,21 @@ export default function SummaryCard({ title, icon, figure, change, ...props }: S
             {title}
           </p>
           <span className="text-sm sm:text-lg font-bold">{figure}</span>
-          {title === "balance" && dashboardFilter !== "all-time" && (
+          {/* {title === "balance" && dashboardFilter !== "all-time" && (
             <span className="font-semibold uppercase lg:font-bold text-[0.6rem] sm:text-xs tracking-widest text-faint-text">
               Net
             </span>
-          )}
-          {typeof change === "number" && (
+          )} */}
+          {typeof change === "number" ? (
             <span
               className={`font-semibold uppercase lg:font-bold text-[0.6rem] sm:text-xs tracking-wider ${change > 0 && "text-green-500"} ${change < 0 && "text-red-500"} ${change === 0 && "text-faint-text"}`}>
               {change === 0 && "No change"}
               {change > 0 && `+${change}%`}
               {change < 0 && `${change}%`}
+            </span>
+          ) : (
+            <span className="font-semibold uppercase lg:font-bold text-[0.6rem] sm:text-xs tracking-wider text-faint-text">
+              {title === "balance" ? "Net" : "No change"}
             </span>
           )}
         </div>

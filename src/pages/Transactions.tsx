@@ -1,4 +1,5 @@
-import type { ChangeEvent } from "react";
+import { useEffect, useState, type ChangeEvent } from "react";
+import { useSearchParams } from "react-router-dom";
 import Filter from "../components/Filter";
 import Pagination from "../components/Pagination";
 import Table from "../components/Table";
@@ -16,10 +17,25 @@ import {
   type TransactionCategory,
 } from "../store/accountSlice";
 import { useAppDispatch, useAppSelector } from "../store/storeHooks";
+import { DATA_ROWS_PER_PAGE } from "../utils/appConstants";
 
 export default function Transactions() {
+  const [page, setPage] = useState(1);
+  const [searchParams] = useSearchParams();
+
+  const pageParam = Number(searchParams.get("page"));
+  const currentPage = pageParam > 0 ? pageParam : 1;
+
   const transactions = useAppSelector(selectTransactionsData);
+  const rowCount = transactions.length;
+  const pageCount = Math.ceil(rowCount / DATA_ROWS_PER_PAGE);
+  const paramExceedsLastPage = currentPage > pageCount;
   const appliedFilters = useAppSelector(selectTransactionFilters);
+  const from = (currentPage - 1) * DATA_ROWS_PER_PAGE;
+  const currentPageTransactions = transactions.slice(from, DATA_ROWS_PER_PAGE);
+
+  console.log(from);
+  console.log(transactions.slice(from, DATA_ROWS_PER_PAGE));
 
   const transactionTypeFilterOptions = [
     { label: "All", value: "all" },
@@ -48,10 +64,10 @@ export default function Transactions() {
   ];
 
   const transactionsSortByOptions = [
-    { label: "Date (newest first)", value: "date_asc" },
-    { label: "Date (oldest first)", value: "date_desc" },
-    { label: "Amount (highest first)", value: "amount_desc" },
-    { label: "Amount (lowest first)", value: "amount_asc" },
+    { label: "Sort by date (newest first)", value: "date_asc" },
+    { label: "Sort by date (oldest first)", value: "date_desc" },
+    { label: "Sort by amount (highest first)", value: "amount_desc" },
+    { label: "Sort by amount (lowest first)", value: "amount_asc" },
   ];
 
   const dispatch = useAppDispatch();
@@ -69,7 +85,7 @@ export default function Transactions() {
   };
 
   return (
-    <section className="w-full flex flex-col gap-4">
+    <section className="w-full h-[85dvh] flex flex-col gap-4">
       <div className="w-full flex flex-col sm:flex-row-reverse items-end sm:items-center gap-2">
         <Filter
           options={transactionTypeFilterOptions}
@@ -77,7 +93,7 @@ export default function Transactions() {
           stateSelector={selectTransactionTypeFilter}
           actionCreator={setTransactionTypeFilter}
         />
-        <div className="flex items-center gap-2 sm:mr-auto">
+        <div className="flex items-center gap-2 sm:mr-auto flex-wrap">
           <Select
             options={transactionCategoryFilterOptions}
             value={appliedFilters.category}
@@ -111,7 +127,7 @@ export default function Transactions() {
         />
 
         <Table.Footer>
-          <Pagination />
+          <Pagination count={rowCount} paramExceedsLastPage={paramExceedsLastPage} />
         </Table.Footer>
       </Table>
     </section>

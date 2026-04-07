@@ -11,7 +11,9 @@ type TableProps = {
 function Table({ columns, children }: TableProps) {
   return (
     <TableContext.Provider value={{ columns }}>
-      <div role="table" className="text-xs bg-component-bg rounded-md overflow-hidden">
+      <div
+        role="table"
+        className="relative flex-1 flex flex-col h-full text-xs bg-component-bg rounded-md overflow-hidden">
         {children}
       </div>
     </TableContext.Provider>
@@ -23,7 +25,7 @@ function Header({ children }: { children: ReactNode }) {
 
   return (
     <div
-      className={`grid ${columns} gap-x-4 md:gap-x-2 items-center px-4 py-6 border-b border-backdrop uppercase font-bold`}
+      className={`grid ${columns} gap-x-4 md:gap-x-2 items-center px-3 md:px-4 py-4 md:py-6 border-b border-backdrop uppercase font-bold`}
       role="row">
       {children}
     </div>
@@ -43,7 +45,11 @@ function Row({ children }: { children: ReactNode }) {
 }
 
 function Empty({ text }: { text: string }) {
-  return <p className="text-lg font-semibold text-center m-6">{text}</p>;
+  return (
+    <p className="w-full h-full grid items-center justify-center text-lg font-semibold text-center">
+      {text}
+    </p>
+  );
 }
 
 function Body({
@@ -54,7 +60,7 @@ function Body({
   render: (arg: Transaction) => JSX.Element;
 }) {
   return (
-    <section className="mx-1 overflow-y-auto max-h-120 lg:max-h-150 styled-scrollbar divide-y divide-faint-text/10">
+    <section className="mx-1 h-full flex-1 flex flex-col *:flex-1 overflow-hidden divide-y divide-faint-text/10">
       {data.length ? (
         (data.map(render) as ReactNode)
       ) : (
@@ -66,7 +72,7 @@ function Body({
 
 function Footer({ children }: { children: ReactNode }) {
   return (
-    <footer className="flex content-center p-3 border-t border-backdrop [&:not(:has(*))]:hidden">
+    <footer className="flex content-center p-2 md:p-3 border-t border-backdrop [&:not(:has(*))]:hidden">
       {children}
     </footer>
   );

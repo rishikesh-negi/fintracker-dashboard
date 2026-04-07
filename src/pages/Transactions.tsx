@@ -1,4 +1,4 @@
-import { useEffect, useState, type ChangeEvent } from "react";
+import { type ChangeEvent } from "react";
 import { useSearchParams } from "react-router-dom";
 import Filter from "../components/Filter";
 import Pagination from "../components/Pagination";
@@ -20,7 +20,7 @@ import { useAppDispatch, useAppSelector } from "../store/storeHooks";
 import { DATA_ROWS_PER_PAGE } from "../utils/appConstants";
 
 export default function Transactions() {
-  const [page, setPage] = useState(1);
+  // const [page, setPage] = useState(1);
   const [searchParams] = useSearchParams();
 
   const pageParam = Number(searchParams.get("page"));
@@ -32,7 +32,7 @@ export default function Transactions() {
   const paramExceedsLastPage = currentPage > pageCount;
   const appliedFilters = useAppSelector(selectTransactionFilters);
   const from = (currentPage - 1) * DATA_ROWS_PER_PAGE;
-  const currentPageTransactions = transactions.slice(from, DATA_ROWS_PER_PAGE);
+  // const currentPageTransactions = transactions.slice(from, DATA_ROWS_PER_PAGE);
 
   console.log(from);
   console.log(transactions.slice(from, DATA_ROWS_PER_PAGE));

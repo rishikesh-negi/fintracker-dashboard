@@ -19,6 +19,7 @@ import { useAppDispatch, useAppSelector } from "../store/storeHooks";
 
 export default function Transactions() {
   const transactions = useAppSelector(selectTransactionsData);
+  const appliedFilters = useAppSelector(selectTransactionFilters);
 
   const transactionTypeFilterOptions = [
     { label: "All", value: "all" },
@@ -28,12 +29,22 @@ export default function Transactions() {
 
   const transactionCategoryFilterOptions = [
     { label: "All", value: "all" },
-    { label: "Utility", value: "utility" },
-    { label: "Lifestyle", value: "lifestyle" },
-    { label: "Transit", value: "transit" },
-    { label: "Essentials", value: "essentials" },
-    { label: "Installment", value: "installment" },
-    { label: "Investment", value: "investment" },
+    ...(appliedFilters.transactionType === "income" || appliedFilters.transactionType === "all"
+      ? [
+          { label: "Salary", value: "salary" },
+          { label: "Dividend", value: "dividend" },
+        ]
+      : []),
+    ...(appliedFilters.transactionType === "expense" || appliedFilters.transactionType === "all"
+      ? [
+          { label: "Utility", value: "utility" },
+          { label: "Lifestyle", value: "lifestyle" },
+          { label: "Transit", value: "transit" },
+          { label: "Essentials", value: "essentials" },
+          { label: "Installment", value: "installment" },
+          { label: "Investment", value: "investment" },
+        ]
+      : []),
   ];
 
   const transactionsSortByOptions = [
@@ -45,7 +56,6 @@ export default function Transactions() {
 
   const dispatch = useAppDispatch();
 
-  const appliedFilters = useAppSelector(selectTransactionFilters);
   const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) =>
     dispatch(
       setTransactionsCategoryFilter({ category: e.target.value as TransactionCategory | "all" }),
@@ -60,14 +70,14 @@ export default function Transactions() {
 
   return (
     <section className="w-full flex flex-col gap-4">
-      <div className="w-full flex flex-col items-end gap-2">
+      <div className="w-full flex flex-col sm:flex-row-reverse items-end sm:items-center gap-2">
         <Filter
           options={transactionTypeFilterOptions}
           filterField="type"
           stateSelector={selectTransactionTypeFilter}
           actionCreator={setTransactionTypeFilter}
         />
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 sm:mr-auto">
           <Select
             options={transactionCategoryFilterOptions}
             value={appliedFilters.category}

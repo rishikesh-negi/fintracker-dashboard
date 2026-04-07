@@ -1,5 +1,5 @@
 import type { ComponentPropsWithoutRef } from "react";
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { Cell, Label, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import type { VerticalAlignmentType } from "recharts/types/component/DefaultLegendContent";
 import { useDarkMode } from "../contexts/DarkModeContext";
 import type { TransactionCategory } from "../store/accountSlice";
@@ -19,15 +19,18 @@ type ExpensesBreakdownProps = ComponentPropsWithoutRef<"div"> & {
 export default function ExpensesBreakdownPieChart({ chartData }: ExpensesBreakdownProps) {
   const { isDarkMode } = useDarkMode();
   const colors = isDarkMode ? colorsDark : colorsLight;
+  const tooltipBgColor = isDarkMode ? "#1a1a1a" : "#f6f6f6";
+  const totalLabelColor = isDarkMode ? "#d7d7d7" : "#777";
 
   const data = chartData
     .filter((obj) => obj.amount > 0)
     .map((obj, i) => ({ ...obj, color: colors[i] }));
 
   const pageWidth = document.documentElement.getBoundingClientRect().width;
-  const innerRadius = pageWidth < 1280 ? 60 : 85;
+  const innerRadius = pageWidth < 1280 ? 50 : 75;
   const outerRadius = pageWidth < 1280 ? 75 : 105;
   const chartHeight = pageWidth < 1024 ? 200 : 300;
+  const totalLabelSize = pageWidth < 1280 ? "12px" : "14px";
 
   const chartCX = pageWidth < 1024 ? "50%" : "50%";
   const legendLayout = pageWidth < 1024 ? "vertical" : "horizontal";
@@ -38,7 +41,7 @@ export default function ExpensesBreakdownPieChart({ chartData }: ExpensesBreakdo
   const legendAlignment = pageWidth < 1024 ? "right" : "center";
 
   return (
-    <div className="col-span-full lg:col-start-5 xl:col-start-6 lg:-col-end-1 flex flex-col gap-2 w-full p-2 sm:p-4 lg:p-6 xl:p-8 rounded-md bg-component-bg shadow-md">
+    <div className="col-span-full lg:col-start-5 xl:col-start-6 lg:-col-end-1 flex flex-col gap-2 w-full p-2 sm:p-4 lg:p-6 rounded-md bg-component-bg shadow-md">
       <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold lg:font-bold p-1">
         Expenses breakdown
       </h4>
@@ -63,11 +66,17 @@ export default function ExpensesBreakdownPieChart({ chartData }: ExpensesBreakdo
                   key={`${entry.category}${entry.amount}`}
                 />
               ))}
+              <Label
+                value={`${currencyFormatter.format(data.reduce((accum, tr) => accum + tr.amount, 0))}`}
+                position="center"
+                style={{ fontSize: totalLabelSize, fontWeight: 800, fill: totalLabelColor }}
+              />
             </Pie>
 
             <Tooltip
               formatter={(value) => currencyFormatter.format(value as number)}
               itemStyle={{ fontSize: 18, fontWeight: 600 }}
+              contentStyle={{ backgroundColor: tooltipBgColor }}
             />
 
             <Legend

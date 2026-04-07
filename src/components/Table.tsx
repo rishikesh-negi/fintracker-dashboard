@@ -23,7 +23,7 @@ function Header({ children }: { children: ReactNode }) {
 
   return (
     <div
-      className={`grid ${columns} gap-x-6 items-center px-4 py-6 border-b border-backdrop uppercase font-bold`}
+      className={`grid ${columns} gap-x-4 md:gap-x-2 items-center px-4 py-6 border-b border-backdrop uppercase font-bold`}
       role="row">
       {children}
     </div>
@@ -35,7 +35,7 @@ function Row({ children }: { children: ReactNode }) {
 
   return (
     <div
-      className={`grid ${columns} gap-x-6 items-center px-3 py-6 not-last:border-b border-faint-text`}
+      className={`grid ${columns} gap-x-4 md:gap-x-2 items-center px-3 py-6 not-last:border-b border-faint-text`}
       role="row">
       {children}
     </div>
@@ -54,7 +54,7 @@ function Body({
   render: (arg: Transaction) => JSX.Element;
 }) {
   return (
-    <section className="mx-1 overflow-y-auto max-h-120 lg:max-h-150 styled-scrollbar">
+    <section className="mx-1 overflow-y-auto max-h-120 lg:max-h-150 styled-scrollbar divide-y divide-faint-text/10">
       {data.length ? (
         (data.map(render) as ReactNode)
       ) : (

@@ -41,7 +41,7 @@ export default function ExpensesBreakdownPieChart({ chartData }: ExpensesBreakdo
   const legendAlignment = pageWidth < 1024 ? "right" : "center";
 
   return (
-    <div className="col-span-full lg:col-start-5 xl:col-start-6 lg:-col-end-1 flex flex-col gap-2 w-full p-2 sm:p-4 lg:p-6 rounded-md bg-component-bg shadow-md">
+    <div className="col-span-full lg:col-start-5 xl:col-start-6 lg:-col-end-1 flex flex-col gap-2 w-full component-container">
       <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold lg:font-bold p-1">
         Expenses breakdown
       </h4>

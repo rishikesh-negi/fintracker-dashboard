@@ -8,7 +8,7 @@ type SideNavLinkProps = {
 
 export default function SideNavLink({ link }: SideNavLinkProps) {
   const urlLocation = useLocation();
-  const { sideNavIsOpen } = useSideNavToggle();
+  const { sideNavIsOpen, setSideNavIsOpen } = useSideNavToggle();
 
   return (
     <li
@@ -16,6 +16,7 @@ export default function SideNavLink({ link }: SideNavLinkProps) {
       tabIndex={sideNavIsOpen ? 1 : 0}>
       <Link
         to={link.href}
+        onClick={() => setSideNavIsOpen(false)}
         className={`flex items-center gap-4 sm:gap-3 lg:gap-5 px-8 sm:px-5 lg:px-6 xl:px-8 py-3 ${link.href === urlLocation.pathname && "-translate-x-1 text-accent-100"}`}>
         {link.icon}
         <span>{link.name}</span>

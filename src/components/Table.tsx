@@ -60,7 +60,7 @@ function Body({
   render: (arg: Transaction) => JSX.Element;
 }) {
   return (
-    <section className="mx-1 h-full flex-1 flex flex-col *:flex-1 overflow-hidden divide-y divide-faint-text/10">
+    <section className="mx-1 h-full flex-1 flex flex-col *:flex-1 overflow-auto styled-scrollbar divide-y divide-faint-text/10">
       {data.length ? (
         (data.map(render) as ReactNode)
       ) : (

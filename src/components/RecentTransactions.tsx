@@ -24,9 +24,13 @@ export default function RecentTransactions({ recentTransactions }: RecentTransac
         </Link>
       </div>
 
-      <ul className="w-full divide-y divide-faint-text/20 overflow-y-auto overflow-x-hidden">
+      <ul className="w-full divide-y divide-faint-text/10 overflow-y-auto overflow-x-hidden">
         {recentTransactions.map((tr) => (
-          <TransactionRow transaction={tr} key={`${tr.accountHolderName}${tr.transactionId}`} />
+          <TransactionRow
+            transaction={tr}
+            columns="grid-cols-[1.2fr_2.5fr_1fr_1.5fr] sm:grid-cols-[repeat(4,1fr)]"
+            key={`${tr.accountHolderName}${tr.transactionId}`}
+          />
         ))}
       </ul>
     </div>

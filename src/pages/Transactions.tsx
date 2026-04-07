@@ -1,5 +1,8 @@
 import type { ChangeEvent } from "react";
 import Filter from "../components/Filter";
+import Pagination from "../components/Pagination";
+import Table from "../components/Table";
+import TransactionRow from "../components/TransactionRow";
 import Select from "../components/ui/Select";
 import {
   selectTransactionFilters,
@@ -13,8 +16,6 @@ import {
   type TransactionCategory,
 } from "../store/accountSlice";
 import { useAppDispatch, useAppSelector } from "../store/storeHooks";
-import Table from "../components/Table";
-import TransactionRow from "../components/TransactionRow";
 
 export default function Transactions() {
   const transactions = useAppSelector(selectTransactionsData);
@@ -80,7 +81,7 @@ export default function Transactions() {
         </div>
       </div>
 
-      <Table columns="grid-cols-[1.2fr_3fr_1fr_2fr]">
+      <Table columns="grid-cols-[1.2fr_2.5fr_1fr_1.5fr] sm:grid-cols-[repeat(4,1fr)]">
         <Table.Header>
           <div>Date</div>
           <div>Description</div>
@@ -93,13 +94,14 @@ export default function Transactions() {
           render={(arg: Transaction) => (
             <TransactionRow
               transaction={arg}
+              columns="grid-cols-[1.2fr_2.5fr_1fr_1.5fr] sm:grid-cols-[repeat(4,1fr)]"
               key={`${arg.accountHolderName}${arg.accountNumber}${arg.transactionId}`}
             />
           )}
         />
 
         <Table.Footer>
-          <div></div>
+          <Pagination />
         </Table.Footer>
       </Table>
     </section>

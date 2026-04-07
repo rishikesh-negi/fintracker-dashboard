@@ -13,14 +13,16 @@ export default function TransactionRow({ transaction, columns, ...props }: Recen
   const { date, transactionType, amount, description } = transaction;
 
   return (
-    <li {...props} className={`grid w-full ${columns} gap-3 items-center text-xs px-2 py-2`}>
-      <span className="text-xs">{format(date, "MMM dd")}</span>
-      <span className="text-xs">{description}</span>
+    <li
+      {...props}
+      className={`grid w-full ${columns} gap-3 items-center text-xs xl:text-sm px-2 py-2`}>
+      <span>{format(date, "MMM dd")}</span>
+      <span>{description}</span>
       <Tag
         text={transactionType}
         bgColor={`${transactionType === "expense" ? "bg-[#d90028]" : "bg-[#00a34f]"}`}
       />
-      <span className="text-xs font-bold">{currencyFormatter.format(amount)}</span>
+      <span className="font-bold">{currencyFormatter.format(amount)}</span>
     </li>
   );
 }

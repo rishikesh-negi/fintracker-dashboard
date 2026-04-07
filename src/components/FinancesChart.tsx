@@ -37,7 +37,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
   const axesFontSize = window.innerWidth > 768 ? 12 : 10;
 
   return (
-    <div className="col-span-full flex flex-col gap-2 w-full p-2 sm:p-4 lg:p-6 xl:p-8 rounded-md bg-component-bg shadow-md">
+    <div className="col-span-full flex flex-col gap-2 w-full p-2 sm:p-4 lg:p-6 rounded-md bg-component-bg shadow-md">
       <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold lg:font-bold p-1">
         {chartData.length
           ? `Your finances (${chartData[0].label} — ${chartData.at(-1)?.label})`

@@ -65,7 +65,11 @@ function Body({
 }
 
 function Footer({ children }: { children: ReactNode }) {
-  return <footer className="flex content-center p-3 [&:not(:has(*))]:hidden">{children}</footer>;
+  return (
+    <footer className="flex content-center p-3 border-t border-backdrop [&:not(:has(*))]:hidden">
+      {children}
+    </footer>
+  );
 }
 
 Table.Header = Header;

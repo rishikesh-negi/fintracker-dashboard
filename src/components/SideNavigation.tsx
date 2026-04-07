@@ -43,7 +43,7 @@ export default function SideNavigation() {
 
   return (
     <aside
-      className={`absolute sm:static inset-0 sm:inset-auto w-[70%] z-10 sm:w-full col-span-1 row-span-full flex flex-col bg-dark-800 transition-all text-light-200 ${sideNavIsOpen ? "translate-0" : "-translate-x-full"} sm:translate-0`}>
+      className={`absolute sm:static inset-0 sm:inset-auto w-[70%] sm:w-full z-20 col-span-1 row-span-full flex flex-col bg-dark-800 transition-all text-light-200 ${sideNavIsOpen ? "translate-0" : "-translate-x-full"} sm:translate-0`}>
       <div className="relative py-4 mb-4">
         <img src="/logo.png" className="w-32 sm:w-24 md:w-32 block mx-auto" alt="Platform logo" />
 

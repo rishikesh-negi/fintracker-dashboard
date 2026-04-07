@@ -62,10 +62,18 @@
 
 @layer components {
   .styled-scrollbar {
-    @apply [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar]:h-full [&::-webkit-scrollbar-thumb]:bg-accent-300 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:transition-colors [&::-webkit-scrollbar-thumb]:duration-100 [&::-webkit-scrollbar-thumb:hover]:bg-accent-500 [&::-webkit-scrollbar-thumb:hover]:cursor-pointer [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-button]:hidden;
+    @apply [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar]:h-full [&::-webkit-scrollbar-thumb]:bg-faint-text/50 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:transition-colors [&::-webkit-scrollbar-thumb]:duration-100 [&::-webkit-scrollbar-thumb:hover]:bg-faint-text/70 [&::-webkit-scrollbar-thumb:hover]:cursor-pointer [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-button]:hidden;
   }
 
   .component-container {
-    @apply p-2 sm:p-3 xl:p-4 rounded-md bg-component-bg shadow-md;
+    @apply p-2 sm:p-4 lg:p-6 rounded-md bg-component-bg shadow-md;
+  }
+
+  .summary-card {
+    @apply col-span-2 row-span-1 relative p-3 sm:p-4 bg-component-bg rounded-md shadow-md;
+  }
+
+  .summary-icon-container {
+    @apply w-12 md:w-12 aspect-square md:h-12 rounded-full flex items-center justify-center bg-backdrop shadow-[inset_0.1rem_0.15rem_0.2rem_0.1rem_rgba(0,0,0,0.1)];
   }
 }

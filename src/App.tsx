@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 import Transactions from "./pages/Transactions";
 import Insights from "./pages/Insights";
+import { MobileSideNavToggleProvider } from "./contexts/MobileSideNavContext";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
           <Route
             element={
               <Provider store={store}>
-                <AppLayout />
+                <MobileSideNavToggleProvider>
+                  <AppLayout />
+                </MobileSideNavToggleProvider>
               </Provider>
             }>
             <Route index element={<Navigate replace to="dashboard" />} />

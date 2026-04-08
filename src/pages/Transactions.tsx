@@ -85,7 +85,7 @@ export default function Transactions() {
   };
 
   return (
-    <section className="w-full h-[85dvh] md:h-[80dvh] flex flex-col gap-4">
+    <section className="w-full mb-4 md:mb-0 h-[85dvh] md:h-[80dvh] flex flex-col gap-4">
       <div className="w-full flex flex-col sm:flex-row-reverse items-end sm:items-center gap-2">
         <Filter
           options={transactionTypeFilterOptions}

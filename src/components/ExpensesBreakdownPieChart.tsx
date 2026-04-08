@@ -46,7 +46,7 @@ export default function ExpensesBreakdownPieChart({ chartData }: ExpensesBreakdo
         Expenses breakdown
       </h4>
 
-      <ResponsiveContainer width="100%" height={chartHeight}>
+      <ResponsiveContainer width="100%" height={chartHeight} className="flex-1 content-center">
         {chartData.length > 0 ? (
           <PieChart>
             <Pie

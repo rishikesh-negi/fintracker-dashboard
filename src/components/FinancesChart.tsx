@@ -23,9 +23,18 @@ type FinanceChartProps = ComponentPropsWithoutRef<"div"> & {
 export default function FinancesChart({ chartData }: FinanceChartProps) {
   const { isDarkMode } = useDarkMode();
   const colors = {
-    balance: { stroke: "#178fbe", fill: isDarkMode ? "#7dc7e4" : "#178fbe" },
-    expenses: { stroke: "#e4572e", fill: isDarkMode ? "#f0ab97" : "#e4572e" },
-    income: { stroke: "#ffc914", fill: isDarkMode ? "#f3db8b" : "#ffc914" },
+    balance: {
+      stroke: "#ffc914",
+      fill: isDarkMode ? "rgba(255, 228, 139, 0.4)" : "rgba(255, 201, 20, 0.6)",
+    },
+    income: {
+      stroke: "#178fbe",
+      fill: isDarkMode ? "rgba(125, 199, 228, 0.4)" : "rgba(23, 143, 190, 0.6)",
+    },
+    expenses: {
+      stroke: "#e4572e",
+      fill: isDarkMode ? "rgba(240, 171, 151, 0.4)" : "rgba(228, 87, 46, 0.6)",
+    },
     gridStroke: isDarkMode ? "#333" : "#ddd",
     text: isDarkMode ? "#acacac" : "#646464",
     background: isDarkMode ? "#1a1a1a" : "#f6f6f6",

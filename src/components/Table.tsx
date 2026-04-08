@@ -13,7 +13,7 @@ function Table({ columns, children }: TableProps) {
     <TableContext.Provider value={{ columns }}>
       <div
         role="table"
-        className="relative h-full flex-1 flex flex-col text-xs bg-component-bg rounded-md overflow-hidden">
+        className="relative min-h-full flex-1 flex flex-col text-xs bg-component-bg rounded-md overflow-hidden">
         {children}
       </div>
     </TableContext.Provider>

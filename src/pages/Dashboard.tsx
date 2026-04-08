@@ -20,7 +20,7 @@ export default function Dashboard() {
     <>
       <section className="w-full h-full flex flex-col gap-4">
         <div className="w-full flex items-center justify-between">
-          <p className="hidden md:inline w-fit text-md text-nowrap font-bold">
+          <p className="hidden md:inline w-fit text-md lg:text-lg xl:text-xl 2xl:text-2xl text-nowrap font-bold">
             Welcome, {accountHolderName}
           </p>
           <DashboardFilter />

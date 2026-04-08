@@ -158,7 +158,7 @@ export const selectDashboardData = createSelector(
   (transactions, dashboardFilter) => {
     let currentIntervalTransactions = transactions;
     let previousIntervalTransactions: Transaction[], summaries: DashboardSummaries;
-    const recentTransactions = transactions.slice(-10);
+    const recentTransactions = transactions.slice(-10).toReversed();
 
     if (dashboardFilter === "all-time") {
       summaries = getSummaries(currentIntervalTransactions);

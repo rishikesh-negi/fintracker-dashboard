@@ -55,7 +55,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
 
       {chartData.length ? (
         <ResponsiveContainer width="100%" height={chartHeight}>
-          <AreaChart data={chartData}>
+          <AreaChart data={chartData} margin={{ left: 12 }}>
             <XAxis
               dataKey={"label"}
               tick={{ fill: colors.text }}
@@ -69,7 +69,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
               tickLine={{ stroke: colors.text }}
               fontSize={axesFontSize}
               stroke={colors.gridStroke}
-              width={32}
+              width={33}
             />
             <CartesianGrid strokeDasharray="4" stroke={colors.gridStroke} />
             <Tooltip

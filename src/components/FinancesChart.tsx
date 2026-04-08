@@ -89,7 +89,6 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
               strokeWidth={2}
               fill={colors.balance.fill}
               name="Balance"
-              unit="₹"
             />
             <Area
               dataKey="expenses"
@@ -98,7 +97,6 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
               strokeWidth={2}
               fill={colors.expenses.fill}
               name="Expenses"
-              unit="₹"
             />
             <Area
               dataKey="income"
@@ -107,7 +105,6 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
               strokeWidth={2}
               fill={colors.income.fill}
               name="Income"
-              unit="₹"
             />
           </AreaChart>
         </ResponsiveContainer>

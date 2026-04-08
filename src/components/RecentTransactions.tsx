@@ -12,7 +12,7 @@ export default function RecentTransactions({ recentTransactions }: RecentTransac
   const { isDarkMode } = useDarkMode();
 
   return (
-    <div className="col-span-full lg:col-start-1 lg:col-end-5 xl:col-end-6 lg:row-start-3 row-span-1 flex flex-col gap-4 component-container">
+    <div className="col-span-full lg:col-start-1 lg:col-end-5 xl:col-end-6 lg:row-start-3 row-span-1 flex flex-col gap-2 component-container">
       <div className="flex items-center justify-between">
         <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold lg:font-bold p-1">
           Recent transactions

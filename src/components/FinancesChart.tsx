@@ -24,12 +24,12 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
   const { isDarkMode } = useDarkMode();
   const colors = {
     balance: {
-      stroke: "#ffc914",
-      fill: isDarkMode ? "rgba(255, 228, 139, 0.4)" : "rgba(255, 201, 20, 0.6)",
+      stroke: "rgb(80, 177, 0)",
+      fill: isDarkMode ? "rgba(80, 177, 0, 0.4)" : "rgba(80, 177, 0, 0.8)",
     },
     income: {
-      stroke: "#178fbe",
-      fill: isDarkMode ? "rgba(125, 199, 228, 0.4)" : "rgba(23, 143, 190, 0.6)",
+      stroke: "rgb(0, 211, 165)",
+      fill: isDarkMode ? "rgba(0, 211, 165, 0.4)" : "rgba(0, 211, 165, 0.8)",
     },
     expenses: {
       stroke: "#e4572e",

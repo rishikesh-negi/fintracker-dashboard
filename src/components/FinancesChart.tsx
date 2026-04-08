@@ -44,6 +44,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
 
   const chartHeight = window.innerWidth > 768 ? 300 : 200;
   const axesFontSize = window.innerWidth > 768 ? 12 : 10;
+  const chartLeftMargin = window.innerWidth > 768 ? 12 : 0;
 
   return (
     <div className="col-span-full flex flex-col gap-2 w-full component-container">
@@ -55,7 +56,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
 
       {chartData.length ? (
         <ResponsiveContainer width="100%" height={chartHeight}>
-          <AreaChart data={chartData} margin={{ left: 12 }}>
+          <AreaChart data={chartData} margin={{ left: chartLeftMargin }}>
             <XAxis
               dataKey={"label"}
               tick={{ fill: colors.text }}

@@ -42,13 +42,13 @@ export const getSummaries = (
       .filter((tr) => tr.transactionType === "expense")
       .reduce((accum, tr) => accum + tr.amount, 0);
 
-    const percentChangeExpenses = Number(
-      (((expenses - prevIntervalExpenses) / prevIntervalExpenses) * 100).toFixed(2),
-    );
-
     const prevIntervalIncome = prevIntervalTransactions
       .filter((tr) => tr.transactionType === "income")
       .reduce((accum, tr) => accum + tr.amount, 0);
+
+    const percentChangeExpenses = Number(
+      (((expenses - prevIntervalExpenses) / prevIntervalExpenses) * 100).toFixed(2),
+    );
 
     const percentChangeIncome = Number(
       (((income - prevIntervalIncome) / prevIntervalIncome) * 100).toFixed(2),
@@ -58,8 +58,9 @@ export const getSummaries = (
     const prevIntervalSavingsRate = Number(
       ((prevIntervalSavings / prevIntervalIncome) * 100).toFixed(2),
     );
+
     const percentChangeSavingsRate = Number(
-      ((savingsRate - prevIntervalSavingsRate) * 100).toFixed(2),
+      (((savingsRate - prevIntervalSavingsRate) / prevIntervalSavingsRate) * 100).toFixed(2),
     );
 
     return {

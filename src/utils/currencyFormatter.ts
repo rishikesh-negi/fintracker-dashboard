@@ -10,5 +10,5 @@ export const currencyFormatterCompact = new Intl.NumberFormat("en-IN", {
   notation: "compact",
   compactDisplay: "long",
   maximumFractionDigits: 2,
-  minimumFractionDigits: 1,
+  trailingZeroDisplay: "stripIfInteger",
 });

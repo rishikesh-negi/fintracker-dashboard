@@ -1,6 +1,6 @@
 import { type ChangeEvent } from "react";
 import { useSearchParams } from "react-router-dom";
-import Filter from "../components/Filter";
+import Filter, { type FilterOption } from "../components/Filter";
 import Pagination from "../components/Pagination";
 import Table from "../components/Table";
 import TransactionRow from "../components/TransactionRow";
@@ -37,10 +37,24 @@ export default function Transactions() {
   const emptyRows = DATA_ROWS_PER_PAGE - currentPageTransactions.length;
   const rowsToRender = [...currentPageTransactions, ...Array(emptyRows).fill(null)];
 
-  const transactionTypeFilterOptions = [
+  const transactionTypeFilterOptions: FilterOption[] = [
     { label: "All", value: "all" },
-    { label: "Expense", value: "expense" },
-    { label: "Income", value: "income" },
+    {
+      label: "Expense",
+      value: "expense",
+      disabled: appliedFilters.category === "salary" || appliedFilters.category === "dividend",
+    },
+    {
+      label: "Income",
+      value: "income",
+      disabled:
+        appliedFilters.category === "utility" ||
+        appliedFilters.category === "lifestyle" ||
+        appliedFilters.category === "essentials" ||
+        appliedFilters.category === "transit" ||
+        appliedFilters.category === "installment" ||
+        appliedFilters.category === "investment",
+    },
   ];
 
   const transactionCategoryFilterOptions = [

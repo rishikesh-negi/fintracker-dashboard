@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from "../store/storeHooks";
 export type FilterOption = {
   label: string;
   value: string;
+  disabled?: boolean;
 };
 
 type FilterProps<T> = {
@@ -32,10 +33,10 @@ export default function Filter<T>({
     <div className="w-fit bg-component-bg shadow-[0_3px_5px_1px_rgba(0,0,0,0.06)] rounded-md p-0.5 flex items-center gap-0.5">
       {options.map((option) => (
         <button
-          className={`border-none rounded-sm sm:text-md font-bold text-xs xl:text-sm px-1 lg:px-2 py-0.5 sm:py-1 cursor-pointer hover:not-disabled:bg-accent-700 hover:not-disabled:text-light-100 ${currentFilter === option.value && "bg-accent-700 text-light-100"} transition-all`}
+          className={`border-none rounded-sm sm:text-md font-bold text-xs xl:text-sm px-1 lg:px-2 py-0.5 sm:py-1 cursor-pointer hover:not-disabled:bg-accent-700 hover:not-disabled:text-light-100 disabled:cursor-not-allowed disabled:text-faint-text ${currentFilter === option.value && "bg-accent-700 text-light-100"} transition-all`}
           onClick={() => handleClick(option.value)}
           key={`${option.label}-${option.value}`}
-          disabled={currentFilter === option.value}>
+          disabled={option.disabled === true}>
           {option.label}
         </button>
       ))}

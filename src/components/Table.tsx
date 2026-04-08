@@ -13,7 +13,7 @@ function Table({ columns, children }: TableProps) {
     <TableContext.Provider value={{ columns }}>
       <div
         role="table"
-        className="relative flex-1 flex flex-col h-full text-xs bg-component-bg rounded-md overflow-hidden">
+        className="relative h-full flex-1 flex flex-col text-xs bg-component-bg rounded-md overflow-hidden">
         {children}
       </div>
     </TableContext.Provider>
@@ -60,7 +60,7 @@ function Body({
   render: (arg: Transaction) => JSX.Element;
 }) {
   return (
-    <section className="mx-1 h-full flex-1 flex flex-col *:flex-1 overflow-auto styled-scrollbar divide-y divide-faint-text/10">
+    <section className="mx-1 h-full flex-1 flex flex-col *:flex-1 overflow-hidden divide-y divide-faint-text/10">
       {data.length ? (
         (data.map(render) as ReactNode)
       ) : (

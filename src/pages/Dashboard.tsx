@@ -12,13 +12,19 @@ export default function Dashboard() {
   const { summaries, expensesByCategory, chartData, recentTransactions } =
     useAppSelector(selectDashboardData);
   const balance = useAppSelector(selectBalance);
+  const accountHolderName = useAppSelector((state) => state.account.accountHolder.split(" ")[0]);
 
   const iconClasses = "text-3xl text-faint-text";
 
   return (
     <>
       <section className="w-full h-full flex flex-col gap-4">
-        <DashboardFilter />
+        <div className="w-full flex items-center justify-between">
+          <p className="hidden md:inline w-fit text-md text-nowrap font-bold">
+            Welcome, {accountHolderName}
+          </p>
+          <DashboardFilter />
+        </div>
         <div className="w-full grid grid-cols-4 lg:grid-cols-8 grid-rows-[repeat(8,auto)] gap-x-2 lg:gap-x-3 gap-y-2 lg:gap-y-3">
           <SummaryCard
             title="balance"

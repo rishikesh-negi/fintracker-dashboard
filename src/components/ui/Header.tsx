@@ -11,15 +11,24 @@ export default function Header() {
       <img src="/logo.png" className="w-24 sm:hidden" alt="Platform logo" />
       <div className="flex items-center gap-3 sm:w-full sm:justify-between">
         <RoleToggler />
-        <button
-          className="p-1 rounded-md flex items-center justify-center cursor-pointer hover:bg-accent-100/25"
-          onClick={toggleDarkMode}>
-          {isDarkMode ? (
-            <HiSun className="text-xl md:text-2xl text-accent-500" />
-          ) : (
-            <HiMoon className="text-xl md:text-2xl text-accent-500" />
-          )}
-        </button>
+
+        <div className="flex items-center gap-2 md:gap-3">
+          <button
+            className="p-1 rounded-md flex items-center justify-center cursor-pointer hover:bg-accent-100/25"
+            onClick={toggleDarkMode}>
+            {isDarkMode ? (
+              <HiSun className="text-xl md:text-2xl text-accent-500" />
+            ) : (
+              <HiMoon className="text-xl md:text-2xl text-accent-500" />
+            )}
+          </button>
+          <img
+            src="/userAvatar.jpg"
+            alt="user avatar"
+            title="Profile"
+            className="w-8 aspect-square rounded-full border-2 border-faint-text/30 cursor-pointer hover:opacity-80"
+          />
+        </div>
       </div>
     </header>
   );

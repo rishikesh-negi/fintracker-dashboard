@@ -85,7 +85,7 @@ export default function Transactions() {
   };
 
   return (
-    <section className="w-full mb-10 md:h-[80dvh] flex flex-col gap-4">
+    <section className="w-full mb-10 h-[95dvh] md:h-[80dvh] flex flex-col gap-4">
       <div className="w-full flex flex-col sm:flex-row-reverse items-end sm:items-center gap-2">
         <Filter
           options={transactionTypeFilterOptions}
@@ -125,7 +125,7 @@ export default function Transactions() {
                 key={`${arg.accountHolderName}${arg.accountNumber}${arg.transactionId}`}
               />
             ) : (
-              <div className="border-none outline-none"> </div>
+              <div className="border-none outline-none"></div>
             )
           }
         />

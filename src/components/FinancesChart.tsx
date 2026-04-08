@@ -69,7 +69,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
               tickLine={{ stroke: colors.text }}
               fontSize={axesFontSize}
               stroke={colors.gridStroke}
-              width={30}
+              width={32}
             />
             <CartesianGrid strokeDasharray="4" stroke={colors.gridStroke} />
             <Tooltip

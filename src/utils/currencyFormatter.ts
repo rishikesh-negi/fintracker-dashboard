@@ -1,7 +1,7 @@
 export const currencyFormatter = new Intl.NumberFormat("en-IN", {
   style: "currency",
   currency: "INR",
-  trailingZeroDisplay: "stripIfInteger",
+  maximumFractionDigits: 0,
 });
 
 export const currencyFormatterCompact = new Intl.NumberFormat("en-IN", {
@@ -9,4 +9,6 @@ export const currencyFormatterCompact = new Intl.NumberFormat("en-IN", {
   currency: "INR",
   notation: "compact",
   compactDisplay: "long",
+  maximumFractionDigits: 2,
+  trailingZeroDisplay: "stripIfInteger",
 });

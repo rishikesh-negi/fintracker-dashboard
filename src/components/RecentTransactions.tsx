@@ -28,7 +28,7 @@ export default function RecentTransactions({ recentTransactions }: RecentTransac
         {recentTransactions.map((tr) => (
           <TransactionRow
             transaction={tr}
-            columns="grid-cols-[1.2fr_2.5fr_1fr_1.5fr] sm:grid-cols-[repeat(4,1fr)]"
+            columns="grid-cols-[1.4fr_2.5fr_1fr_1.3fr] sm:grid-cols-[repeat(4,1fr)]"
             key={`${tr.accountHolderName}${tr.transactionId}`}
           />
         ))}

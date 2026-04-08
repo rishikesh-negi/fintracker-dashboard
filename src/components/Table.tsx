@@ -25,7 +25,7 @@ function Header({ children }: { children: ReactNode }) {
 
   return (
     <div
-      className={`grid ${columns} gap-x-4 md:gap-x-2 items-center px-3 md:px-4 py-4 md:py-6 border-b border-backdrop uppercase font-bold`}
+      className={`grid ${columns} gap-x-4 md:gap-x-2 items-center px-3 md:px-4 py-4 md:py-6 border-b border-backdrop text-[10px] sm:text-xs uppercase font-bold`}
       role="row">
       {children}
     </div>

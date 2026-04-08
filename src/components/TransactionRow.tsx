@@ -16,7 +16,7 @@ export default function TransactionRow({ transaction, columns, ...props }: Recen
     <li
       {...props}
       className={`grid w-full ${columns} gap-3 items-center text-xs xl:text-sm px-2 py-2`}>
-      <span className="text-[10px] sm:text-xs">{format(date, "dd MMM yy")}</span>
+      <span className="text-[10px] sm:text-xs font-bold">{format(date, "dd MMM yy")}</span>
       <span>{description}</span>
       <Tag
         text={transactionType}

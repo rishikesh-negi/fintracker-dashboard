@@ -44,7 +44,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
 
   const chartHeight = window.innerWidth > 768 ? 300 : 200;
   const axesFontSize = window.innerWidth > 768 ? 12 : 10;
-  const chartLeftMargin = window.innerWidth > 768 ? 12 : 0;
+  const chartLeftMargin = window.innerWidth > 768 ? 12 : 8;
 
   return (
     <div className="col-span-full flex flex-col gap-2 w-full component-container">

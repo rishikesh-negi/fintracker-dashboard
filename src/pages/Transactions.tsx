@@ -20,22 +20,22 @@ import { useAppDispatch, useAppSelector } from "../store/storeHooks";
 import { DATA_ROWS_PER_PAGE } from "../utils/appConstants";
 
 export default function Transactions() {
-  // const [page, setPage] = useState(1);
   const [searchParams] = useSearchParams();
-
   const pageParam = Number(searchParams.get("page"));
-  const currentPage = pageParam > 0 ? pageParam : 1;
-
   const transactions = useAppSelector(selectTransactionsData);
+
+  const currentPage = pageParam && pageParam > 0 ? pageParam : 1;
   const rowCount = transactions.length;
   const pageCount = Math.ceil(rowCount / DATA_ROWS_PER_PAGE);
   const paramExceedsLastPage = currentPage > pageCount;
   const appliedFilters = useAppSelector(selectTransactionFilters);
   const from = (currentPage - 1) * DATA_ROWS_PER_PAGE;
-  // const currentPageTransactions = transactions.slice(from, DATA_ROWS_PER_PAGE);
-
-  console.log(from);
-  console.log(transactions.slice(from, DATA_ROWS_PER_PAGE));
+  const currentPageTransactions =
+    currentPage >= pageCount
+      ? transactions.slice(from)
+      : transactions.slice(from, currentPage * DATA_ROWS_PER_PAGE);
+  const emptyRows = DATA_ROWS_PER_PAGE - currentPageTransactions.length;
+  const rowsToRender = [...currentPageTransactions, ...Array(emptyRows).fill(null)];
 
   const transactionTypeFilterOptions = [
     { label: "All", value: "all" },
@@ -116,14 +116,18 @@ export default function Transactions() {
         </Table.Header>
 
         <Table.Body
-          data={transactions}
-          render={(arg: Transaction) => (
-            <TransactionRow
-              transaction={arg}
-              columns="grid-cols-[1.2fr_2.5fr_1fr_1.5fr] sm:grid-cols-[repeat(4,1fr)]"
-              key={`${arg.accountHolderName}${arg.accountNumber}${arg.transactionId}`}
-            />
-          )}
+          data={rowsToRender}
+          render={(arg: Transaction | null) =>
+            arg ? (
+              <TransactionRow
+                transaction={arg}
+                columns="grid-cols-[1.2fr_2.5fr_1fr_1.5fr] sm:grid-cols-[repeat(4,1fr)]"
+                key={`${arg.accountHolderName}${arg.accountNumber}${arg.transactionId}`}
+              />
+            ) : (
+              <div className="border-none outline-none"> </div>
+            )
+          }
         />
 
         <Table.Footer>

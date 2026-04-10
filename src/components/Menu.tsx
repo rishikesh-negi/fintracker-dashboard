@@ -63,7 +63,7 @@ function Options({ children, id }: { children: ReactNode; id: string }) {
 
   return (
     <div
-      className="absolute z-10 top-1 -right-1 sm:right-0 py-1 flex flex-col outline outline-faint-text/20 rounded-md bg-component-bg shadow-md text-accent-500"
+      className="absolute z-10 top-1 -right-1 sm:right-0 py-1 flex flex-col outline outline-faint-text/20 rounded-md bg-component-bg shadow-md"
       ref={ref}>
       <ul className="w-full mt-2">{children}</ul>
     </div>

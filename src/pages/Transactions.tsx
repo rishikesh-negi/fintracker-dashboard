@@ -141,7 +141,7 @@ export default function Transactions() {
             arg ? (
               <TransactionRow
                 transaction={arg}
-                columns="grid-cols-[1.4fr_2.4fr_1fr_1.4fr] sm:grid-cols-[repeat(4,1fr)]"
+                columns="grid-cols-[1.3fr_2.3fr_1fr_1.5fr] sm:grid-cols-[repeat(4,1fr)]"
                 menu={
                   <Menu>
                     <Menu.Toggler id={arg.transactionId} />

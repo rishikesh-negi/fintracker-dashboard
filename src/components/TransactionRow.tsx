@@ -23,7 +23,7 @@ export default function TransactionRow({
   return (
     <li
       {...props}
-      className={`grid w-full ${columns} gap-3 items-center text-xs xl:text-sm px-2 py-2`}>
+      className={`grid w-full ${columns} gap-2 sm:gap-3 items-center text-xs xl:text-sm px-2 py-2`}>
       <span className="text-[10px] sm:text-xs font-bold">{format(date, "dd MMM yy")}</span>
       <span>{description}</span>
       <Tag

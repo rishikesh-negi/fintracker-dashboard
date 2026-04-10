@@ -44,7 +44,7 @@ function Toggler({ id }: { id: string }) {
 
   return (
     <button
-      className={`absolute top-0 -right-2 sm:right-0 -translate-y-1/2 bg-none border-0 p-1 rounded-sm transition-all duration-200 hover:bg-backdrop cursor-pointer ${openId === id && "z-20 outline shadow-sm outline-faint-text/20 bg-component-bg hover:bg-backdrop"}`}
+      className={`absolute top-0 -right-1 sm:right-0 -translate-y-1/2 bg-none border-0 p-1 rounded-sm transition-all duration-200 hover:bg-backdrop cursor-pointer ${openId === id && "z-20 outline shadow-sm outline-faint-text/20 bg-component-bg hover:bg-backdrop"}`}
       onClick={handleClick}>
       {(!openId || openId === "") && <HiEllipsisVertical className="text-xl text-faint-text" />}
       {openId && openId !== "" && <HiXMark className="text-xl text-faint-text" />}
@@ -63,7 +63,7 @@ function Options({ children, id }: { children: ReactNode; id: string }) {
 
   return (
     <div
-      className="absolute z-10 top-1 -right-2 sm:right-0 py-1 flex flex-col outline outline-faint-text/20 rounded-md bg-component-bg shadow-md text-accent-500"
+      className="absolute z-10 top-1 -right-1 sm:right-0 py-1 flex flex-col outline outline-faint-text/20 rounded-md bg-component-bg shadow-md text-accent-500"
       ref={ref}>
       <ul className="w-full mt-2">{children}</ul>
     </div>

@@ -1,16 +1,24 @@
-import type { ComponentPropsWithoutRef } from "react";
-import type { Transaction } from "../store/accountSlice";
 import { format } from "date-fns";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
+import type { Transaction } from "../store/accountSlice";
+import { useAppSelector } from "../store/storeHooks";
 import { currencyFormatter, currencyFormatterCompact } from "../utils/currencyFormatter";
 import Tag from "./ui/Tag";
 
 type RecentTransactionProps = ComponentPropsWithoutRef<"li"> & {
   transaction: Transaction;
   columns: string;
+  menu?: ReactNode;
 };
 
-export default function TransactionRow({ transaction, columns, ...props }: RecentTransactionProps) {
+export default function TransactionRow({
+  transaction,
+  columns,
+  menu,
+  ...props
+}: RecentTransactionProps) {
   const { date, transactionType, amount, description } = transaction;
+  const role = useAppSelector((state) => state.account.role);
 
   return (
     <li
@@ -22,8 +30,9 @@ export default function TransactionRow({ transaction, columns, ...props }: Recen
         text={transactionType}
         bgColor={`${transactionType === "expense" ? "bg-[#d90028]" : "bg-[#00a34f]"}`}
       />
-      <span className="font-bold">
+      <span className="font-bold flex items-center justify-between">
         {amount > 9999 ? currencyFormatterCompact.format(amount) : currencyFormatter.format(amount)}
+        {menu && role === "admin" ? menu : ""}
       </span>
     </li>
   );

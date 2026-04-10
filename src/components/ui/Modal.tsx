@@ -6,7 +6,6 @@ import {
   useState,
   type Dispatch,
   type MouseEventHandler,
-  type ProviderProps,
   type ReactElement,
   type ReactNode,
   type RefObject,
@@ -14,18 +13,19 @@ import {
 } from "react";
 import { createPortal } from "react-dom";
 
+type ModalProps = {
+  modalContent: ReactElement;
+  children: ReactNode;
+};
+
 export type ModalContextValue = {
   modalRef: RefObject<HTMLDialogElement | null>;
   setModalIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-type ModalProps = ProviderProps<ModalContextValue> & {
-  modalContent: ReactElement;
-  children: ReactNode;
-};
 const ModalContext = createContext<ModalContextValue | undefined>(undefined);
 
-export default function ModalProvider({ modalContent, children, ...props }: ModalProps) {
+export default function ModalProvider({ children, modalContent, ...props }: ModalProps) {
   const modalRef = useRef<HTMLDialogElement | null>(null);
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
 

@@ -46,7 +46,7 @@ export default function ModalProvider({ children, modalContent, ...props }: Moda
       {modalIsOpen
         ? createPortal(
             <dialog
-              className="fixed inset-0 m-auto p-0 rounded-md backdrop:bg-dark-500/75 backdrop-blur-[2px]"
+              className="fixed inset-0 m-auto p-0 rounded-md backdrop:bg-dark-500/75 backdrop:backdrop-blur-[5px]"
               onClick={handleOutsideClick}
               ref={modalRef}
               {...props}>

@@ -29,7 +29,7 @@ export default function RecentTransactions({ recentTransactions }: RecentTransac
           <TransactionRow
             transaction={tr}
             columns="grid-cols-[1.4fr_2.5fr_1fr_1.3fr] sm:grid-cols-[repeat(4,1fr)]"
-            key={`${tr.accountHolderName}${tr.transactionId}`}
+            key={`${tr.accountHolder}${tr.transactionId}`}
           />
         ))}
       </ul>

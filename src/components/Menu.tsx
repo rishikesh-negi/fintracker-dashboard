@@ -82,7 +82,7 @@ function Option({
   // const { close } = use(MenuContext)!;
 
   function handleClick(e: ReactMouseEvent<HTMLButtonElement>) {
-    onClick?.(e);
+    onClick(e);
     // close();
   }
 

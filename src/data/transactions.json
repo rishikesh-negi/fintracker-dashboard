@@ -2,7 +2,7 @@
   {
     "transactionId": "TXN300001",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-01-01T09:00:00Z",
@@ -21,7 +21,7 @@
   {
     "transactionId": "TXN300002",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-01-02T11:00:00Z",
@@ -29,18 +29,12 @@
     "category": "utility",
     "balanceAfterTransaction": 102000.0,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300003",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 739.91,
     "date": "2025-01-11T11:00:00Z",
@@ -48,18 +42,12 @@
     "category": "transit",
     "balanceAfterTransaction": 101260.09,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300004",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 15996.77,
     "date": "2025-01-15T12:00:00Z",
@@ -67,18 +55,12 @@
     "category": "investment",
     "balanceAfterTransaction": 85263.32,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300005",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1950.62,
     "date": "2025-01-15T14:00:00Z",
@@ -86,18 +68,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 83312.7,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300006",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3179.37,
     "date": "2025-01-18T20:00:00Z",
@@ -105,18 +81,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 80133.33,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300007",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2271.59,
     "date": "2025-01-20T18:00:00Z",
@@ -124,18 +94,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 77861.74,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300008",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1071.51,
     "date": "2025-01-22T11:00:00Z",
@@ -143,18 +107,12 @@
     "category": "transit",
     "balanceAfterTransaction": 76790.23,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300009",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1068.07,
     "date": "2025-01-22T14:00:00Z",
@@ -162,18 +120,12 @@
     "category": "transit",
     "balanceAfterTransaction": 75722.16,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300010",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3777.1,
     "date": "2025-01-24T12:00:00Z",
@@ -181,18 +133,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 71945.06,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300011",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3210.22,
     "date": "2025-01-26T10:00:00Z",
@@ -200,18 +146,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 68734.84,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300012",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-02-02T09:00:00Z",
@@ -230,7 +170,7 @@
   {
     "transactionId": "TXN300013",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-02-05T11:00:00Z",
@@ -238,18 +178,12 @@
     "category": "utility",
     "balanceAfterTransaction": 120734.84,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300014",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1121.29,
     "date": "2025-02-06T10:00:00Z",
@@ -257,18 +191,12 @@
     "category": "transit",
     "balanceAfterTransaction": 119613.55,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300015",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 964.67,
     "date": "2025-02-07T08:00:00Z",
@@ -276,18 +204,12 @@
     "category": "transit",
     "balanceAfterTransaction": 118648.88,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300016",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2378.4,
     "date": "2025-02-07T14:00:00Z",
@@ -295,18 +217,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 116270.48,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300017",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 936.87,
     "date": "2025-02-08T09:00:00Z",
@@ -314,18 +230,12 @@
     "category": "transit",
     "balanceAfterTransaction": 115333.61,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300018",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2369.54,
     "date": "2025-02-10T13:00:00Z",
@@ -333,18 +243,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 112964.07,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300019",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3195.37,
     "date": "2025-02-11T17:00:00Z",
@@ -352,18 +256,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 109768.7,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300020",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4346.08,
     "date": "2025-02-11T21:00:00Z",
@@ -371,18 +269,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 105422.62,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300021",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2590.29,
     "date": "2025-02-14T20:00:00Z",
@@ -390,18 +282,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 102832.33,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300022",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 18815.24,
     "date": "2025-02-15T12:00:00Z",
@@ -409,18 +295,12 @@
     "category": "investment",
     "balanceAfterTransaction": 84017.09,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300023",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-03-01T09:00:00Z",
@@ -439,7 +319,7 @@
   {
     "transactionId": "TXN300024",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-03-03T11:00:00Z",
@@ -447,18 +327,12 @@
     "category": "utility",
     "balanceAfterTransaction": 136017.09,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300025",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2377.65,
     "date": "2025-03-07T14:00:00Z",
@@ -466,18 +340,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 133639.44,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300026",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1517.36,
     "date": "2025-03-10T18:00:00Z",
@@ -485,18 +353,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 132122.08,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300027",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 15437.25,
     "date": "2025-03-15T12:00:00Z",
@@ -504,18 +366,12 @@
     "category": "investment",
     "balanceAfterTransaction": 116684.83,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300028",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1076.23,
     "date": "2025-03-19T10:00:00Z",
@@ -523,18 +379,12 @@
     "category": "transit",
     "balanceAfterTransaction": 115608.6,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300029",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 809.78,
     "date": "2025-03-21T13:00:00Z",
@@ -542,18 +392,12 @@
     "category": "transit",
     "balanceAfterTransaction": 114798.82,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300030",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 3184.98,
     "date": "2025-03-22T10:00:00Z",
@@ -572,7 +416,7 @@
   {
     "transactionId": "TXN300031",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2930.98,
     "date": "2025-03-24T11:00:00Z",
@@ -580,18 +424,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 115052.82,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300032",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1180.57,
     "date": "2025-03-25T10:00:00Z",
@@ -599,18 +437,12 @@
     "category": "transit",
     "balanceAfterTransaction": 113872.25,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300033",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3970.13,
     "date": "2025-03-25T18:00:00Z",
@@ -618,18 +450,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 109902.12,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300034",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-04-02T09:00:00Z",
@@ -648,7 +474,7 @@
   {
     "transactionId": "TXN300035",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-04-04T11:00:00Z",
@@ -656,18 +482,12 @@
     "category": "utility",
     "balanceAfterTransaction": 161902.12,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300036",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 789.76,
     "date": "2025-04-06T10:00:00Z",
@@ -675,18 +495,12 @@
     "category": "transit",
     "balanceAfterTransaction": 161112.36,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300037",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2369.28,
     "date": "2025-04-08T11:00:00Z",
@@ -694,18 +508,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 158743.08,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300038",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 663.88,
     "date": "2025-04-08T14:00:00Z",
@@ -713,18 +521,12 @@
     "category": "transit",
     "balanceAfterTransaction": 158079.2,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300039",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1181.8,
     "date": "2025-04-10T11:00:00Z",
@@ -732,18 +534,12 @@
     "category": "transit",
     "balanceAfterTransaction": 156897.4,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300040",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4009.35,
     "date": "2025-04-10T21:00:00Z",
@@ -751,18 +547,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 152888.05,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300041",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 16951.14,
     "date": "2025-04-15T12:00:00Z",
@@ -770,18 +560,12 @@
     "category": "investment",
     "balanceAfterTransaction": 135936.91,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300042",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 6756.06,
     "date": "2025-04-16T20:00:00Z",
@@ -789,18 +573,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 129180.85,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300043",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2446.29,
     "date": "2025-04-27T17:00:00Z",
@@ -808,18 +586,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 126734.56,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300044",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-05-03T09:00:00Z",
@@ -838,7 +610,7 @@
   {
     "transactionId": "TXN300045",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-05-04T11:00:00Z",
@@ -846,18 +618,12 @@
     "category": "utility",
     "balanceAfterTransaction": 178734.56,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300046",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4378.33,
     "date": "2025-05-06T20:00:00Z",
@@ -865,18 +631,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 174356.23,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300047",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 904.96,
     "date": "2025-05-09T19:00:00Z",
@@ -884,18 +644,12 @@
     "category": "transit",
     "balanceAfterTransaction": 173451.27,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300048",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 16817.76,
     "date": "2025-05-15T12:00:00Z",
@@ -903,18 +657,12 @@
     "category": "investment",
     "balanceAfterTransaction": 156633.51,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300049",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 6937.78,
     "date": "2025-05-16T20:00:00Z",
@@ -922,18 +670,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 149695.73,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300050",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1143.86,
     "date": "2025-05-17T17:00:00Z",
@@ -941,18 +683,12 @@
     "category": "transit",
     "balanceAfterTransaction": 148551.87,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300051",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2521.83,
     "date": "2025-05-21T20:00:00Z",
@@ -960,18 +696,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 146030.04,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300052",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2788.52,
     "date": "2025-05-27T21:00:00Z",
@@ -979,18 +709,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 143241.52,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300053",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 772.7,
     "date": "2025-05-28T14:00:00Z",
@@ -998,18 +722,12 @@
     "category": "transit",
     "balanceAfterTransaction": 142468.82,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300054",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-06-01T11:00:00Z",
@@ -1017,18 +735,12 @@
     "category": "utility",
     "balanceAfterTransaction": 134468.82,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300055",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-06-02T09:00:00Z",
@@ -1047,7 +759,7 @@
   {
     "transactionId": "TXN300056",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2477.97,
     "date": "2025-06-06T19:00:00Z",
@@ -1055,18 +767,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 191990.85,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300057",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1136.6,
     "date": "2025-06-07T09:00:00Z",
@@ -1074,18 +780,12 @@
     "category": "transit",
     "balanceAfterTransaction": 190854.25,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300058",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4429.65,
     "date": "2025-06-08T10:00:00Z",
@@ -1093,18 +793,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 186424.6,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300059",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 426.85,
     "date": "2025-06-09T14:00:00Z",
@@ -1112,18 +806,12 @@
     "category": "transit",
     "balanceAfterTransaction": 185997.75,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300060",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4621.39,
     "date": "2025-06-12T20:00:00Z",
@@ -1131,18 +819,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 181376.36,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300061",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2533.48,
     "date": "2025-06-13T15:00:00Z",
@@ -1150,18 +832,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 178842.88,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300062",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 16365.23,
     "date": "2025-06-15T12:00:00Z",
@@ -1169,18 +845,12 @@
     "category": "investment",
     "balanceAfterTransaction": 162477.65,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300063",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 999.32,
     "date": "2025-06-18T14:00:00Z",
@@ -1188,18 +858,12 @@
     "category": "transit",
     "balanceAfterTransaction": 161478.33,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300064",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 2992.5,
     "date": "2025-06-22T10:00:00Z",
@@ -1218,7 +882,7 @@
   {
     "transactionId": "TXN300065",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-07-01T09:00:00Z",
@@ -1237,7 +901,7 @@
   {
     "transactionId": "TXN300066",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-07-05T11:00:00Z",
@@ -1245,18 +909,12 @@
     "category": "utility",
     "balanceAfterTransaction": 216470.83,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300067",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1085.32,
     "date": "2025-07-08T19:00:00Z",
@@ -1264,18 +922,12 @@
     "category": "transit",
     "balanceAfterTransaction": 215385.51,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300068",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4398.84,
     "date": "2025-07-09T19:00:00Z",
@@ -1283,18 +935,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 210986.67,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300069",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 15791.07,
     "date": "2025-07-15T12:00:00Z",
@@ -1302,18 +948,12 @@
     "category": "investment",
     "balanceAfterTransaction": 195195.6,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300070",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2301.34,
     "date": "2025-07-17T16:00:00Z",
@@ -1321,18 +961,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 192894.26,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300071",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 627.16,
     "date": "2025-07-19T11:00:00Z",
@@ -1340,18 +974,12 @@
     "category": "transit",
     "balanceAfterTransaction": 192267.1,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300072",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 706.48,
     "date": "2025-07-21T19:00:00Z",
@@ -1359,18 +987,12 @@
     "category": "transit",
     "balanceAfterTransaction": 191560.62,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300073",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3211.28,
     "date": "2025-07-24T16:00:00Z",
@@ -1378,18 +1000,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 188349.34,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300074",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-08-01T09:00:00Z",
@@ -1408,7 +1024,7 @@
   {
     "transactionId": "TXN300075",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-08-03T11:00:00Z",
@@ -1416,18 +1032,12 @@
     "category": "utility",
     "balanceAfterTransaction": 240349.34,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300076",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5500.0,
     "date": "2025-08-10T10:00:00Z",
@@ -1435,18 +1045,12 @@
     "category": "installment",
     "balanceAfterTransaction": 234849.34,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Finance Co",
-      "bankName": "HDFC",
-      "accountNumber": "001122",
-      "ifsc": "HDFC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300077",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 14094.43,
     "date": "2025-08-15T12:00:00Z",
@@ -1454,18 +1058,12 @@
     "category": "investment",
     "balanceAfterTransaction": 220754.91,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300078",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 7457.28,
     "date": "2025-08-15T20:00:00Z",
@@ -1473,18 +1071,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 213297.63,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300079",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3476.1,
     "date": "2025-08-16T21:00:00Z",
@@ -1492,18 +1084,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 209821.53,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300080",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3525.49,
     "date": "2025-08-17T11:00:00Z",
@@ -1511,18 +1097,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 206296.04,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300081",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 756.81,
     "date": "2025-08-21T15:00:00Z",
@@ -1530,18 +1110,12 @@
     "category": "transit",
     "balanceAfterTransaction": 205539.23,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300082",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 844.32,
     "date": "2025-08-24T19:00:00Z",
@@ -1549,18 +1123,12 @@
     "category": "transit",
     "balanceAfterTransaction": 204694.91,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300083",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 844.58,
     "date": "2025-08-27T09:00:00Z",
@@ -1568,18 +1136,12 @@
     "category": "transit",
     "balanceAfterTransaction": 203850.33,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300084",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3247.72,
     "date": "2025-08-28T11:00:00Z",
@@ -1587,18 +1149,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 200602.61,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300085",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 738.66,
     "date": "2025-08-28T12:00:00Z",
@@ -1606,18 +1162,12 @@
     "category": "transit",
     "balanceAfterTransaction": 199863.95,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300086",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-09-04T11:00:00Z",
@@ -1625,18 +1175,12 @@
     "category": "utility",
     "balanceAfterTransaction": 191863.95,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300087",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-09-05T09:00:00Z",
@@ -1655,7 +1199,7 @@
   {
     "transactionId": "TXN300088",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 848.44,
     "date": "2025-09-06T09:00:00Z",
@@ -1663,18 +1207,12 @@
     "category": "transit",
     "balanceAfterTransaction": 251015.51,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300089",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 646.93,
     "date": "2025-09-06T09:00:00Z",
@@ -1682,18 +1220,12 @@
     "category": "transit",
     "balanceAfterTransaction": 250368.58,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300090",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1715.71,
     "date": "2025-09-08T15:00:00Z",
@@ -1701,18 +1233,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 248652.87,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300091",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3826.89,
     "date": "2025-09-09T13:00:00Z",
@@ -1720,18 +1246,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 244825.98,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300092",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5500.0,
     "date": "2025-09-10T10:00:00Z",
@@ -1739,18 +1259,12 @@
     "category": "installment",
     "balanceAfterTransaction": 239325.98,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Finance Co",
-      "bankName": "HDFC",
-      "accountNumber": "001122",
-      "ifsc": "HDFC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300093",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 819.86,
     "date": "2025-09-11T09:00:00Z",
@@ -1758,18 +1272,12 @@
     "category": "transit",
     "balanceAfterTransaction": 238506.12,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300094",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 15563.49,
     "date": "2025-09-15T12:00:00Z",
@@ -1777,18 +1285,12 @@
     "category": "investment",
     "balanceAfterTransaction": 222942.63,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300095",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5178.71,
     "date": "2025-09-20T20:00:00Z",
@@ -1796,18 +1298,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 217763.92,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300096",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 2387.4,
     "date": "2025-09-22T10:00:00Z",
@@ -1826,7 +1322,7 @@
   {
     "transactionId": "TXN300097",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3024.61,
     "date": "2025-09-25T20:00:00Z",
@@ -1834,18 +1330,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 217126.71,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300098",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-10-03T09:00:00Z",
@@ -1864,7 +1354,7 @@
   {
     "transactionId": "TXN300099",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-10-03T11:00:00Z",
@@ -1872,18 +1362,12 @@
     "category": "utility",
     "balanceAfterTransaction": 269126.71,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300100",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2628.71,
     "date": "2025-10-07T20:00:00Z",
@@ -1891,18 +1375,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 266498.0,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300101",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5500.0,
     "date": "2025-10-10T10:00:00Z",
@@ -1910,18 +1388,12 @@
     "category": "installment",
     "balanceAfterTransaction": 260998.0,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Finance Co",
-      "bankName": "HDFC",
-      "accountNumber": "001122",
-      "ifsc": "HDFC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300102",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 947.51,
     "date": "2025-10-14T09:00:00Z",
@@ -1929,18 +1401,12 @@
     "category": "transit",
     "balanceAfterTransaction": 260050.49,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300103",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 18820.69,
     "date": "2025-10-15T12:00:00Z",
@@ -1948,18 +1414,12 @@
     "category": "investment",
     "balanceAfterTransaction": 241229.8,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300104",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1101.79,
     "date": "2025-10-17T13:00:00Z",
@@ -1967,18 +1427,12 @@
     "category": "transit",
     "balanceAfterTransaction": 240128.01,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300105",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3900.85,
     "date": "2025-10-19T11:00:00Z",
@@ -1986,18 +1440,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 236227.16,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300106",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4629.57,
     "date": "2025-10-19T20:00:00Z",
@@ -2005,18 +1453,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 231597.59,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300107",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1527.9,
     "date": "2025-10-20T17:00:00Z",
@@ -2024,18 +1466,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 230069.69,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300108",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 810.38,
     "date": "2025-10-27T11:00:00Z",
@@ -2043,18 +1479,12 @@
     "category": "transit",
     "balanceAfterTransaction": 229259.31,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300109",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-11-01T09:00:00Z",
@@ -2073,7 +1503,7 @@
   {
     "transactionId": "TXN300110",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-11-01T11:00:00Z",
@@ -2081,18 +1511,12 @@
     "category": "utility",
     "balanceAfterTransaction": 281259.31,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300111",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1100.52,
     "date": "2025-11-07T18:00:00Z",
@@ -2100,18 +1524,12 @@
     "category": "transit",
     "balanceAfterTransaction": 280158.79,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300112",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5500.0,
     "date": "2025-11-10T10:00:00Z",
@@ -2119,18 +1537,12 @@
     "category": "installment",
     "balanceAfterTransaction": 274658.79,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Finance Co",
-      "bankName": "HDFC",
-      "accountNumber": "001122",
-      "ifsc": "HDFC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300113",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 570.34,
     "date": "2025-11-12T16:00:00Z",
@@ -2138,18 +1550,12 @@
     "category": "transit",
     "balanceAfterTransaction": 274088.45,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300114",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 17287.14,
     "date": "2025-11-15T12:00:00Z",
@@ -2157,18 +1563,12 @@
     "category": "investment",
     "balanceAfterTransaction": 256801.31,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300115",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2922.45,
     "date": "2025-11-19T11:00:00Z",
@@ -2176,18 +1576,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 253878.86,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300116",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2529.9,
     "date": "2025-11-20T13:00:00Z",
@@ -2195,18 +1589,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 251348.96,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300117",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1955.52,
     "date": "2025-11-25T20:00:00Z",
@@ -2214,18 +1602,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 249393.44,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300118",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 366.25,
     "date": "2025-11-26T15:00:00Z",
@@ -2233,18 +1615,12 @@
     "category": "transit",
     "balanceAfterTransaction": 249027.19,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300119",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2025-12-01T09:00:00Z",
@@ -2263,7 +1639,7 @@
   {
     "transactionId": "TXN300120",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2025-12-03T11:00:00Z",
@@ -2271,18 +1647,12 @@
     "category": "utility",
     "balanceAfterTransaction": 301027.19,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300121",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3192.18,
     "date": "2025-12-08T17:00:00Z",
@@ -2290,18 +1660,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 297835.01,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300122",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5500.0,
     "date": "2025-12-10T10:00:00Z",
@@ -2309,18 +1673,12 @@
     "category": "installment",
     "balanceAfterTransaction": 292335.01,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Finance Co",
-      "bankName": "HDFC",
-      "accountNumber": "001122",
-      "ifsc": "HDFC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300123",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 781.71,
     "date": "2025-12-14T15:00:00Z",
@@ -2328,18 +1686,12 @@
     "category": "transit",
     "balanceAfterTransaction": 291553.3,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300124",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 6646.88,
     "date": "2025-12-14T20:00:00Z",
@@ -2347,18 +1699,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 284906.42,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300125",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 17441.7,
     "date": "2025-12-15T12:00:00Z",
@@ -2366,18 +1712,12 @@
     "category": "investment",
     "balanceAfterTransaction": 267464.72,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300126",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3594.93,
     "date": "2025-12-18T16:00:00Z",
@@ -2385,18 +1725,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 263869.79,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300127",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 1399.77,
     "date": "2025-12-22T10:00:00Z",
@@ -2415,7 +1749,7 @@
   {
     "transactionId": "TXN300128",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1029.61,
     "date": "2025-12-22T11:00:00Z",
@@ -2423,18 +1757,12 @@
     "category": "transit",
     "balanceAfterTransaction": 264239.95,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300129",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 672.29,
     "date": "2025-12-26T11:00:00Z",
@@ -2442,18 +1770,12 @@
     "category": "transit",
     "balanceAfterTransaction": 263567.66,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300130",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3389.18,
     "date": "2025-12-28T12:00:00Z",
@@ -2461,18 +1783,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 260178.48,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300131",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2026-01-03T09:00:00Z",
@@ -2491,7 +1807,7 @@
   {
     "transactionId": "TXN300132",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2026-01-03T11:00:00Z",
@@ -2499,18 +1815,12 @@
     "category": "utility",
     "balanceAfterTransaction": 312178.48,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300133",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 403.44,
     "date": "2026-01-07T09:00:00Z",
@@ -2518,18 +1828,12 @@
     "category": "transit",
     "balanceAfterTransaction": 311775.04,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300134",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3750.85,
     "date": "2026-01-07T14:00:00Z",
@@ -2537,18 +1841,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 308024.19,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300135",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5500.0,
     "date": "2026-01-10T10:00:00Z",
@@ -2556,18 +1854,12 @@
     "category": "installment",
     "balanceAfterTransaction": 302524.19,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Finance Co",
-      "bankName": "HDFC",
-      "accountNumber": "001122",
-      "ifsc": "HDFC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300136",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 574.5,
     "date": "2026-01-13T10:00:00Z",
@@ -2575,18 +1867,12 @@
     "category": "transit",
     "balanceAfterTransaction": 301949.69,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300137",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3505.46,
     "date": "2026-01-14T13:00:00Z",
@@ -2594,18 +1880,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 298444.23,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300138",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 14718.94,
     "date": "2026-01-15T12:00:00Z",
@@ -2613,18 +1893,12 @@
     "category": "investment",
     "balanceAfterTransaction": 283725.29,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300139",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5588.43,
     "date": "2026-01-16T20:00:00Z",
@@ -2632,18 +1906,12 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 278136.86,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300140",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4211.29,
     "date": "2026-01-18T16:00:00Z",
@@ -2651,18 +1919,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 273925.57,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300141",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 795.44,
     "date": "2026-01-20T15:00:00Z",
@@ -2670,18 +1932,12 @@
     "category": "transit",
     "balanceAfterTransaction": 273130.13,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300142",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3428.2,
     "date": "2026-01-26T17:00:00Z",
@@ -2689,18 +1945,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 269701.93,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300143",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2026-02-01T11:00:00Z",
@@ -2708,18 +1958,12 @@
     "category": "utility",
     "balanceAfterTransaction": 261701.93,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300144",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2026-02-03T09:00:00Z",
@@ -2738,7 +1982,7 @@
   {
     "transactionId": "TXN300145",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3797.05,
     "date": "2026-02-07T15:00:00Z",
@@ -2746,18 +1990,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 317904.88,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300146",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 776.47,
     "date": "2026-02-08T13:00:00Z",
@@ -2765,18 +2003,12 @@
     "category": "transit",
     "balanceAfterTransaction": 317128.41,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300147",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4097.54,
     "date": "2026-02-09T16:00:00Z",
@@ -2784,18 +2016,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 313030.87,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300148",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 5500.0,
     "date": "2026-02-10T10:00:00Z",
@@ -2803,18 +2029,12 @@
     "category": "installment",
     "balanceAfterTransaction": 307530.87,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Finance Co",
-      "bankName": "HDFC",
-      "accountNumber": "001122",
-      "ifsc": "HDFC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300149",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 15613.4,
     "date": "2026-02-15T12:00:00Z",
@@ -2822,18 +2042,12 @@
     "category": "investment",
     "balanceAfterTransaction": 291917.47,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300150",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 728.18,
     "date": "2026-02-23T17:00:00Z",
@@ -2841,18 +2055,12 @@
     "category": "transit",
     "balanceAfterTransaction": 291189.29,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300151",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1741.16,
     "date": "2026-02-24T17:00:00Z",
@@ -2860,18 +2068,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 289448.13,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300152",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 925.26,
     "date": "2026-02-25T17:00:00Z",
@@ -2879,18 +2081,12 @@
     "category": "transit",
     "balanceAfterTransaction": 288522.87,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300153",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3978.4,
     "date": "2026-02-28T19:00:00Z",
@@ -2898,18 +2094,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 284544.47,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300154",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2026-03-03T11:00:00Z",
@@ -2917,18 +2107,12 @@
     "category": "utility",
     "balanceAfterTransaction": 276544.47,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300155",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2026-03-05T09:00:00Z",
@@ -2947,7 +2131,7 @@
   {
     "transactionId": "TXN300156",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 442.13,
     "date": "2026-03-08T14:00:00Z",
@@ -2955,18 +2139,12 @@
     "category": "transit",
     "balanceAfterTransaction": 336102.34,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300157",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1561.06,
     "date": "2026-03-08T16:00:00Z",
@@ -2974,18 +2152,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 334541.28,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300158",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3431.78,
     "date": "2026-03-10T10:00:00Z",
@@ -2993,18 +2165,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 331109.5,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300159",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 16294.46,
     "date": "2026-03-15T12:00:00Z",
@@ -3012,18 +2178,12 @@
     "category": "investment",
     "balanceAfterTransaction": 314815.04,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300160",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 3104.64,
     "date": "2026-03-16T18:00:00Z",
@@ -3031,18 +2191,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 311710.4,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300161",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4372.07,
     "date": "2026-03-19T15:00:00Z",
@@ -3050,18 +2204,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 307338.33,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300162",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 1055.7,
     "date": "2026-03-20T17:00:00Z",
@@ -3069,18 +2217,12 @@
     "category": "transit",
     "balanceAfterTransaction": 306282.63,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300163",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 2920.21,
     "date": "2026-03-22T10:00:00Z",
@@ -3099,7 +2241,7 @@
   {
     "transactionId": "TXN300164",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 493.85,
     "date": "2026-03-23T15:00:00Z",
@@ -3107,18 +2249,12 @@
     "category": "transit",
     "balanceAfterTransaction": 308708.99,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300165",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 346.84,
     "date": "2026-03-24T14:00:00Z",
@@ -3126,18 +2262,12 @@
     "category": "transit",
     "balanceAfterTransaction": 308362.15,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300166",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 8000.0,
     "date": "2026-04-03T11:00:00Z",
@@ -3145,18 +2275,12 @@
     "category": "utility",
     "balanceAfterTransaction": 300362.15,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Suresh Kumar (Landlord)",
-      "bankName": "SBI",
-      "accountNumber": "554433221100",
-      "ifsc": "SBIN0000123"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300167",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "income",
     "amount": 60000.0,
     "date": "2026-04-05T09:00:00Z",
@@ -3175,7 +2299,7 @@
   {
     "transactionId": "TXN300168",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 478.27,
     "date": "2026-04-06T18:00:00Z",
@@ -3183,18 +2307,12 @@
     "category": "transit",
     "balanceAfterTransaction": 359883.88,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300169",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 926.51,
     "date": "2026-04-08T09:00:00Z",
@@ -3202,18 +2320,12 @@
     "category": "transit",
     "balanceAfterTransaction": 358957.37,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300170",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 4298.61,
     "date": "2026-04-10T15:00:00Z",
@@ -3221,18 +2333,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 354658.76,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300171",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2052.19,
     "date": "2026-04-14T16:00:00Z",
@@ -3240,18 +2346,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 352606.57,
     "paymentMethod": "cheque",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300172",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 17183.76,
     "date": "2026-04-15T12:00:00Z",
@@ -3259,18 +2359,12 @@
     "category": "investment",
     "balanceAfterTransaction": 335422.81,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "AMC",
-      "bankName": "HDFC",
-      "accountNumber": "445566",
-      "ifsc": "HDFC002"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300173",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 2302.62,
     "date": "2026-04-22T12:00:00Z",
@@ -3278,18 +2372,12 @@
     "category": "essentials",
     "balanceAfterTransaction": 333120.19,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Superstore",
-      "bankName": "ICICI",
-      "accountNumber": "112233",
-      "ifsc": "ICIC001"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300174",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 535.46,
     "date": "2026-04-22T17:00:00Z",
@@ -3297,18 +2385,12 @@
     "category": "transit",
     "balanceAfterTransaction": 332584.73,
     "paymentMethod": "upi",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Transit Services",
-      "bankName": "Various",
-      "accountNumber": "N/A",
-      "ifsc": "N/A"
-    }
+    "status": "completed"
   },
   {
     "transactionId": "TXN300175",
     "accountNumber": "123456789012",
-    "accountHolderName": "Rishikesh Negi",
+    "accountHolder": "Rishikesh Negi",
     "transactionType": "expense",
     "amount": 7138.62,
     "date": "2026-04-24T20:00:00Z",
@@ -3316,12 +2398,6 @@
     "category": "lifestyle",
     "balanceAfterTransaction": 325446.11,
     "paymentMethod": "bank_transfer",
-    "status": "completed",
-    "beneficiaryDetails": {
-      "name": "Outlet",
-      "bankName": "Axis",
-      "accountNumber": "987654",
-      "ifsc": "UTIB001"
-    }
+    "status": "completed"
   }
 ]

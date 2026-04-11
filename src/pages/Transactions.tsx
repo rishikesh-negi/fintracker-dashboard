@@ -175,7 +175,7 @@ export default function Transactions() {
                     </Menu.Options>
                   </Menu>
                 }
-                key={`${arg.accountHolderName}${arg.accountNumber}${arg.transactionId}`}
+                key={`${arg.accountHolder}${arg.accountNumber}${arg.transactionId}`}
               />
             ) : (
               <div className="border-none outline-none"></div>

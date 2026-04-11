@@ -31,39 +31,21 @@ export type TransactionCategory =
   | "installment"
   | "investment";
 
-interface PartyDetails {
-  name: string;
-  bankName: string;
-  accountNumber: string;
-  ifsc: string;
-}
+type PaymentMethod = "upi" | "bank_transfer" | "cheque";
 
-interface BaseTransaction {
+export interface Transaction {
   transactionId: string;
   accountNumber: string;
-  accountHolderName: string;
+  accountHolder: string;
+  transactionType: "income" | "expense";
   amount: number;
   date: string;
   description: string;
   category: TransactionCategory;
   balanceAfterTransaction: number;
-  paymentMethod: "upi" | "cheque" | "bank_transfer";
+  paymentMethod: PaymentMethod;
   status: "completed";
 }
-
-interface Expense extends BaseTransaction {
-  transactionType: "expense";
-  beneficiaryDetails: PartyDetails;
-  senderDetails?: never;
-}
-
-interface Income extends BaseTransaction {
-  transactionType: "income";
-  senderDetails: PartyDetails;
-  beneficiaryDetails?: never;
-}
-
-export type Transaction = Income | Expense;
 
 type AppRoles = "viewer" | "admin";
 type TransactionsTimescales =
@@ -81,6 +63,7 @@ type TransactionsFiltersAndSort = {
 
 export type AccountState = {
   accountHolder: string;
+  accountNumber: string;
   accountBalance: number;
   userAvatar: string;
   transactions: Transaction[];
@@ -90,7 +73,8 @@ export type AccountState = {
 };
 
 const initialState: AccountState = {
-  accountHolder: transactionsData[0].accountHolderName,
+  accountHolder: transactionsData[0].accountHolder,
+  accountNumber: transactionsData.at(-1)!.accountNumber,
 
   // Non-null assertion because mock data is being used for transactions state:
   accountBalance: transactionsData.at(-1)!.balanceAfterTransaction,
@@ -141,6 +125,80 @@ const accountSlice = createSlice({
       if (action.payload.type === "income") state.accountBalance += action.payload.amount;
       else if (action.payload.type === "expense") state.accountBalance -= action.payload.amount;
       else throw new Error("Invalid transaction type received");
+    },
+    editTransaction(
+      state,
+      action: PayloadAction<{
+        id: string;
+        amount: number;
+        description: string;
+        transactionType: "income" | "expense";
+        category: TransactionCategory;
+      }>,
+    ) {
+      const { id, amount, description, transactionType, category } = action.payload;
+      const transactionIndex = state.transactions.findIndex((tr) => tr.transactionId === id);
+      if (transactionIndex === -1) throw new Error("Transaction not found!");
+
+      const transaction = state.transactions[transactionIndex];
+
+      if (transaction.transactionType !== transactionType) {
+        // If type changed from "expense" to "income":
+        if (transactionType === "income") {
+          state.accountBalance = state.accountBalance + transaction.amount + amount;
+          transaction.transactionType = transactionType;
+        }
+
+        // If type changed from "income" to "expense":
+        if (transactionType === "expense") {
+          state.accountBalance = state.accountBalance - transaction.amount - amount;
+          transaction.transactionType = transactionType;
+        }
+      }
+
+      if (transaction.amount !== amount) transaction.amount = amount;
+
+      if (transaction.description !== description) {
+        if (description.length > 16) throw new Error("Description cannot exceed 15 characters");
+        transaction.description = description;
+      }
+
+      if (transaction.category !== category) transaction.category = category;
+    },
+    deleteTransaction(state, action: PayloadAction<{ id: string }>) {
+      const transactionIndex = state.transactions.findIndex(
+        (tr) => (tr.transactionId = action.payload.id),
+      );
+      if (transactionIndex === -1)
+        throw new Error("Deletion failed. Transaction could not be found");
+
+      state.transactions.splice(transactionIndex, 1);
+    },
+    addTransaction(
+      state,
+      action: PayloadAction<{
+        transactionType: "income" | "expense";
+        amount: number;
+        description: string;
+        category: TransactionCategory;
+        paymentMethod: PaymentMethod;
+      }>,
+    ) {
+      if (action.payload.amount <= 0) throw new Error("Invalid transaction amount entered");
+      const transaction: Partial<Transaction> = { ...action.payload };
+      const { transactionType, amount } = action.payload;
+
+      transaction["transactionId"] = crypto.randomUUID();
+      transaction["accountNumber"] = state.accountNumber;
+      transaction["accountHolder"] = state.accountHolder;
+      transaction["date"] = TODAY.toISOString();
+      transaction["balanceAfterTransaction"] =
+        transactionType === "income"
+          ? state.accountBalance + amount
+          : state.accountBalance - amount;
+      transaction["status"] = "completed";
+
+      state.transactions.push(transaction as Transaction);
     },
   },
 });

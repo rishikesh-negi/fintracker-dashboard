@@ -50,7 +50,7 @@ export default function ModalProvider({ children, modalContent, ...props }: Moda
               onClick={handleOutsideClick}
               ref={modalRef}
               {...props}>
-              <div className="component-container">{modalContent}</div>
+              {modalContent}
             </dialog>,
             document.getElementById("modal-root")!,
           )

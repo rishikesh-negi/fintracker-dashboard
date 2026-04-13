@@ -22,6 +22,7 @@ import {
 } from "../store/accountSlice";
 import { useAppDispatch, useAppSelector } from "../store/storeHooks";
 import { DATA_ROWS_PER_PAGE } from "../utils/appConstants";
+import EditTransactionForm from "../components/EditTransactionForm";
 
 export default function Transactions() {
   const [searchParams] = useSearchParams();
@@ -102,7 +103,8 @@ export default function Transactions() {
     );
   };
 
-  const OpenModalMenuButtonRef = useRef<{ openModal: () => void }>(null);
+  const ButtonOpenEditTransactionForm = useRef<{ openModal: () => void }>(null);
+  const ButtonDeleteTransaction = useRef<{ openModal: () => void }>(null);
 
   return (
     <section className="w-full mb-6 h-[95dvh] md:h-[80dvh] flex flex-col gap-4">
@@ -146,28 +148,29 @@ export default function Transactions() {
                   <Menu>
                     <Menu.Toggler id={arg.transactionId} />
                     <Menu.Options id={arg.transactionId}>
-                      <ModalProvider
-                        modalContent={<div className="fixed inset-0 p-10 text-2xl">EDIT</div>}>
+                      <ModalProvider modalContent={<EditTransactionForm transaction={arg} />}>
                         <ButtonOpenModal
-                          ref={OpenModalMenuButtonRef}
+                          ref={ButtonOpenEditTransactionForm}
                           buttonType="custom"
                           CustomButton={
                             <Menu.Option
                               icon={<HiPencilSquare className="text-sm lg:text-xl" />}
-                              onClick={() => OpenModalMenuButtonRef.current?.openModal()}>
+                              onClick={() => ButtonOpenEditTransactionForm.current?.openModal()}>
                               Edit
                             </Menu.Option>
                           }></ButtonOpenModal>
                       </ModalProvider>
                       <ModalProvider
-                        modalContent={<div className="fixed inset-0 p-10 text-2xl">HELLO</div>}>
+                        modalContent={
+                          <div className="fixed inset-0 w-10 h-10 p-10 text-2xl">HELLO</div>
+                        }>
                         <ButtonOpenModal
-                          ref={OpenModalMenuButtonRef}
+                          ref={ButtonDeleteTransaction}
                           buttonType="custom"
                           CustomButton={
                             <Menu.Option
                               icon={<HiTrash className="text-sm lg:text-xl" />}
-                              onClick={() => OpenModalMenuButtonRef.current?.openModal()}>
+                              onClick={() => ButtonDeleteTransaction.current?.openModal()}>
                               Delete
                             </Menu.Option>
                           }></ButtonOpenModal>

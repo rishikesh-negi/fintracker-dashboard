@@ -48,7 +48,7 @@ export default function FinancesChart({ chartData }: FinanceChartProps) {
 
   return (
     <div className="col-span-full flex flex-col gap-2 w-full component-container">
-      <h4 className="text-xs sm:text-sm md:text-md lg:text-lg font-semibold lg:font-bold p-1">
+      <h4 className="component-heading">
         {chartData.length
           ? `Your finances (${chartData[0].label} — ${chartData.at(-1)?.label})`
           : "Your finances..."}

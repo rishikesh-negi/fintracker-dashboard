@@ -12,17 +12,20 @@ import { HiEllipsisVertical, HiXMark } from "react-icons/hi2";
 import { useOutsideClick } from "../hooks/useOutsideClick";
 
 type MenuContextType = {
-  openId: string;
-  open: Dispatch<SetStateAction<string>>;
+  openId: string | null;
+  open: Dispatch<SetStateAction<string | null>>;
   close: () => void;
 } | null;
 
 const MenuContext = createContext<MenuContextType>(null);
 
 export default function Menu({ children }: { children: ReactNode }) {
-  const [openId, setOpenId] = useState<string>("");
+  const [openId, setOpenId] = useState<string | null>(null);
 
-  const close = () => setOpenId("");
+  const close = () => {
+    if (document.getElementById("modal-root")?.hasChildNodes()) return;
+    setOpenId(null);
+  };
   const open = setOpenId;
 
   return (
@@ -37,7 +40,7 @@ function Toggler({ id }: { id: string }) {
 
   function handleClick(e: ReactMouseEvent<HTMLButtonElement, MouseEvent>) {
     e.stopPropagation();
-    if (openId === "" || openId !== id) {
+    if (openId === null || openId !== id) {
       open(id);
     } else close();
   }
@@ -47,7 +50,7 @@ function Toggler({ id }: { id: string }) {
       className={`absolute top-0 -right-1 sm:right-0 -translate-y-1/2 bg-none border-0 p-1 rounded-sm transition-all duration-200 hover:bg-backdrop cursor-pointer ${openId === id && "z-20 outline shadow-sm outline-faint-text/20 bg-component-bg hover:bg-backdrop"}`}
       onClick={handleClick}>
       {(!openId || openId === "") && <HiEllipsisVertical className="text-xl text-faint-text" />}
-      {openId && openId !== "" && <HiXMark className="text-xl text-faint-text" />}
+      {openId === id && <HiXMark className="text-xl text-faint-text" />}
     </button>
   );
 }

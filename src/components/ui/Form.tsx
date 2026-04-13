@@ -1,20 +1,24 @@
 import {
   useImperativeHandle,
   useRef,
-  type ComponentPropsWithRef,
+  type ComponentPropsWithoutRef,
   type ReactNode,
   type Ref,
   type SubmitEvent,
 } from "react";
 
-type FormProps = ComponentPropsWithRef<"form"> & {
-  children: ReactNode;
-  id: string;
-  onSubmit: (value: unknown) => void;
-  ref: Ref<unknown>;
+export type FormApi = {
+  clear: () => void;
 };
 
-export default function Form({ children, id, onSubmit, ref, ...props }: FormProps) {
+type FormProps = ComponentPropsWithoutRef<"form"> & {
+  children: ReactNode;
+  id?: string;
+  onSave: (value: unknown) => void;
+  ref?: Ref<FormApi>;
+};
+
+export default function Form({ children, id, onSave, ref, ...props }: FormProps) {
   const formRef = useRef<HTMLFormElement>(null);
 
   useImperativeHandle(ref, () => ({
@@ -25,16 +29,11 @@ export default function Form({ children, id, onSubmit, ref, ...props }: FormProp
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData);
-    onSubmit(data);
+    onSave(data);
   }
 
   return (
-    <form
-      ref={formRef}
-      onSubmit={handleSubmit}
-      id={id}
-      {...props}
-      className="px-3 md:px-6 py-1 md:py-3 flex">
+    <form ref={formRef} onSubmit={handleSubmit} id={id} {...props}>
       {children}
     </form>
   );

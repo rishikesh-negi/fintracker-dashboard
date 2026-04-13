@@ -69,6 +69,10 @@
     @apply p-2 sm:p-4 lg:p-6 rounded-md bg-component-bg shadow-md;
   }
 
+  .component-heading {
+    @apply text-xs sm:text-sm lg:text-lg font-semibold lg:font-bold p-1;
+  }
+
   .button-primary {
     @apply px-2 py-0.5 md:px-3 md:py-1 w-fit text-xs sm:text-sm lg:text-lg font-semibold rounded-sm md:rounded-md bg-accent-700 text-light-50 hover:bg-accent-900 cursor-pointer disabled:bg-faint-text disabled:cursor-not-allowed;
   }

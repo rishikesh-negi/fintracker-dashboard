@@ -85,6 +85,18 @@
     @apply w-12 md:w-12 aspect-square md:h-12 rounded-full flex items-center justify-center bg-backdrop shadow-[inset_0.1rem_0.15rem_0.2rem_0.1rem_rgba(0,0,0,0.1)];
   }
 
+  .number-input-reset {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &[type="number"] {
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+  }
+
   .no-border-transition {
     transition: border 0s;
   }

@@ -85,6 +85,10 @@
     @apply w-12 md:w-12 aspect-square md:h-12 rounded-full flex items-center justify-center bg-backdrop shadow-[inset_0.1rem_0.15rem_0.2rem_0.1rem_rgba(0,0,0,0.1)];
   }
 
+  .edit-transaction-form-input {
+    @apply w-full px-2 md:px-3 py-1 md:py-1.5 rounded-sm text-xs md:text-sm xl:text-lg text-text font-semibold bg-backdrop outline-0 focus-visible:border-accent-500 shadow-[inset_0_0_2px_1px_rgba(0,0,0,0.1)];
+  }
+
   .number-input-reset {
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {

@@ -23,7 +23,6 @@ export default function Menu({ children }: { children: ReactNode }) {
   const [openId, setOpenId] = useState<string | null>(null);
 
   const close = () => {
-    if (document.getElementById("modal-root")?.hasChildNodes()) return;
     setOpenId(null);
   };
   const open = setOpenId;
@@ -104,3 +103,9 @@ function Option({
 Menu.Toggler = Toggler;
 Menu.Options = Options;
 Menu.Option = Option;
+
+export function useMenu() {
+  const context = use(MenuContext);
+  if (!context) throw new Error("Context was used outside its provider");
+  return context;
+}

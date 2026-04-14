@@ -12,6 +12,7 @@ import {
   type SetStateAction,
 } from "react";
 import { createPortal } from "react-dom";
+import { useMenu } from "../Menu";
 
 type ModalProps = {
   modalContent: ReactElement;
@@ -29,12 +30,15 @@ export default function ModalProvider({ children, modalContent, ...props }: Moda
   const modalRef = useRef<HTMLDialogElement | null>(null);
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
 
+  const { openId, close } = useMenu();
+
   useEffect(() => {
     if (modalIsOpen) modalRef.current?.showModal();
   }, [modalIsOpen]);
 
   const handleOutsideClick: MouseEventHandler<HTMLDialogElement> = (e) => {
     if (e.target === modalRef.current) {
+      if (openId) close();
       modalRef.current.close();
       setModalIsOpen(false);
     }
@@ -47,7 +51,8 @@ export default function ModalProvider({ children, modalContent, ...props }: Moda
         ? createPortal(
             <dialog
               className="fixed inset-0 m-auto p-0 rounded-md backdrop:bg-dark-500/75 backdrop:backdrop-blur-[5px]"
-              onClick={handleOutsideClick}
+              // onClick={handleOutsideClick}
+              onMouseDown={handleOutsideClick}
               ref={modalRef}
               {...props}>
               {modalContent}

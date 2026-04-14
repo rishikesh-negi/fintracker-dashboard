@@ -14,7 +14,7 @@ export type FormApi = {
 type FormProps = ComponentPropsWithoutRef<"form"> & {
   children: ReactNode;
   id?: string;
-  onSave: (value: unknown) => void;
+  onSave<T>(value: T): void;
   ref?: Ref<FormApi>;
 };
 

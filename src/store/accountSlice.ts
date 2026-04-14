@@ -130,7 +130,7 @@ const accountSlice = createSlice({
       state,
       action: PayloadAction<{
         id: string;
-        amount: number;
+        amount: string;
         description: string;
         transactionType: "income" | "expense";
         category: TransactionCategory;
@@ -145,18 +145,25 @@ const accountSlice = createSlice({
       if (transaction.transactionType !== transactionType) {
         // If type changed from "expense" to "income":
         if (transactionType === "income") {
-          state.accountBalance = state.accountBalance + transaction.amount + amount;
+          state.accountBalance = state.accountBalance + transaction.amount + Number(amount);
           transaction.transactionType = transactionType;
         }
 
         // If type changed from "income" to "expense":
         if (transactionType === "expense") {
-          state.accountBalance = state.accountBalance - transaction.amount - amount;
+          state.accountBalance = state.accountBalance - transaction.amount - Number(amount);
           transaction.transactionType = transactionType;
         }
       }
 
-      if (transaction.amount !== amount) transaction.amount = amount;
+      if (
+        transaction.transactionType === transactionType &&
+        transaction.amount !== Number(amount)
+      ) {
+        const difference = transaction.amount - Number(amount);
+        transaction.amount = Number(amount);
+        state.accountBalance = state.accountBalance + difference;
+      }
 
       if (transaction.description !== description) {
         if (description.length > 16) throw new Error("Description cannot exceed 15 characters");
@@ -379,6 +386,9 @@ export const {
   setTransactionsSortOrder,
   toggleRole,
   updateBalance,
+  editTransaction,
+  deleteTransaction,
+  addTransaction,
 } = accountSlice.actions;
 
 export default accountSlice.reducer;

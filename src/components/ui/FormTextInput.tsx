@@ -18,9 +18,9 @@ export default function FormTextInput({
   ...props
 }: FormInputProps) {
   return (
-    <p className="w-full flex flex-col gap-1">
+    <p className="w-full flex flex-col gap-0.5">
       {label && (
-        <label htmlFor={id} className="text-xs sm:text-sm">
+        <label htmlFor={id} className="text-xs sm:text-sm xl:text-lg">
           {label}:
         </label>
       )}

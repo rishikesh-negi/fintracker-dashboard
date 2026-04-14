@@ -8,7 +8,12 @@ export function useOutsideClick<T extends Element>(
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
-      if (componentRef.current && !componentRef.current?.contains(e.target as Node)) handler();
+      if (
+        componentRef.current &&
+        !componentRef.current?.contains(e.target as Node) &&
+        !document.getElementById("modal-root")?.hasChildNodes()
+      )
+        handler();
     }
 
     document.addEventListener("click", handleClick, listenCapturing);
